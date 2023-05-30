@@ -1,6 +1,6 @@
 # Portfolio
 
-##Este portfolio fue realizado con: 
+## Este portfolio fue realizado con: 
 
 :tw-1f4a5: React
 :tw-1f4a5: Tailwind
