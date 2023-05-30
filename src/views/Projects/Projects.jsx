@@ -1,19 +1,41 @@
-import React from 'react';
+import Project from "../../components/MyProjects/Project"
+import ProjectGitHub from "../../ProjectGitHub.json"
 
-const PortfolioItem = ({ title, description, imageUrl }) => {
+export default function Projects () {
+
+  const data = ProjectGitHub 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-      <div className="md:flex">
-        <div className="md:flex-shrink-0">
-          <img className="h-48 w-full object-cover md:w-48" src={imageUrl} alt={title} />
-        </div>
-        <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{title}</div>
-          <p className="mt-2 text-gray-500">{description}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
+    <div className="flex flex-col bg-gray-800 w-full overflow-y-hidden">
+      <h1 className="m-4 py-1 pt-6 text-5xl text-center md:text-left font-josefin underline underline-offset-8 underline-amber-400 text-amber-400 ">
+        Proyectos
+      </h1>
 
-export default PortfolioItem;
+      {data.length
+        ? data.map((project) => {
+          const {
+            titleProject,
+            content,
+            urlProject,
+            urlGithub,
+            titleTecnologies,
+            contentTecnologies,
+            image
+          } = project
+          return (
+              <Project
+                key={titleProject}
+                title={titleProject}
+                content={content}
+                urlProject={urlProject}
+                titleTech={titleTecnologies}
+                contentTech={contentTecnologies}
+                image={image}
+                urlGithub={urlGithub}
+              />
+          )
+        })
+        : null}
+
+    </div>
+  )
+}

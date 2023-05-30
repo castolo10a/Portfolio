@@ -1,0 +1,74 @@
+[
+    {
+      "titleProject": "Henry Market",
+      "content": "(Experiencia Académica) - Participación en un equipo de desarrollo ágil con sprints de una semana presentándole a un Product Owner avances sobre el desarrollo del E-commerce con diseño y desarrollo de las siguientes features: Features básicas de e-commerce (CRUD de productos, auth, catálogo, checkout, etc.…)",
+      "urlProject": "https://henrymarket.netlify.app/",
+      "urlGithub": "https://github.com/castolo10a/Henry-Market-Front",
+      "titleTecnologies": "Tecnologías",
+      "image": {
+        "alt": "Henry Market"
+      },
+      "contentTecnologies": [
+        {
+          "title": "React",
+          "href": "http://es.reactjs.org"
+        },
+        {
+          "title": "Redux",
+          "href": "http://es.redux.js.org"
+        },
+        {
+          "title": "Node",
+          "href": "http://nodejs.org/es/"
+        },
+        {
+          "title": "Express",
+          "href": "http://expressjs.com/"
+        },
+        {
+          "title": "PostgreSQL",
+          "href": "http://www.postgresql.org/"
+        },
+        {
+          "title": "Sequelize",
+          "href": "http://sequelize.org/"
+        }
+      ]
+    },
+    {
+      "titleProject": "App_Food",
+      "content": "(Experiencia Académica) - Desarrollo de una SPA (Single Page Application) de Recetas que incluía: landing, home con vista a las diferentes recetas, filtrados combinados, búsquedas, ordenamientos, opción de crear nuevas recetas, etc. La SPA consume datos de una base de datos PostgreSQL a través de un Back End desarrollado en NodeJS utilizando Express.",
+      "urlProject": "https://appfood.up.railway.app/",
+      "urlGithub": "https://github.com/castolo10a/AppFood_Front",
+      "titleTecnologies": "Tecnologías",
+      "image": {
+        "alt": "App_Food"
+      },
+      "contentTecnologies": [
+        {
+          "title": "React",
+          "href": "http://es.reactjs.org"
+        },
+        {
+          "title": "Redux",
+          "href": "http://es.redux.js.org"
+        },
+        {
+          "title": "Node",
+          "href": "http://nodejs.org/es/"
+        },
+        {
+          "title": "Express",
+          "href": "http://expressjs.com/"
+        },
+        {
+          "title": "PostgreSQL",
+          "href": "http://www.postgresql.org/"
+        },
+        {
+          "title": "Sequelize",
+          "href": "http://sequelize.org/"
+        }
+      ]
+    }
+  ]

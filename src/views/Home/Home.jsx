@@ -1,6 +1,6 @@
 import { SiGithub, SiLinkedin, SiMicrosoftoutlook, SiWhatsapp } from 'react-icons/si'
 import { AiOutlineMinus } from 'react-icons/ai'
-import Button from '../../components/Button/Button'
+import Button from '../../components/Buttons/Button/Button'
 
 export default function Home () {
   return (
@@ -8,17 +8,17 @@ export default function Home () {
       <div className="flex  flex-col md:block md:col-start-1 md:col-end-5 p-7">
         <div className="mb-2">
           <div className="mb-6">
-            <h1 className="pb-2 text-left text-amber-400 font-serif ">Hola, mi nombre es</h1>
+            <h1 className="pb-2 text-left mb-8 text-6xl font-josefin underline underline-offset-8 underline-amber-400 text-amber-400">Hola</h1>
           </div>
-          <h1 className="font-serif text-left text-8xl text-gray-200">
-            Daniel Castillo
+          <h1 className="font-serif text-left text-8xl text-gray-200 my-4">
+            Soy Daniel Castillo
           </h1>
-          <h1 className="font-serif text-left text-6xl text-amber-400 my-2">
-            Soy Desarrollador Web FullStack
+          <h1 className="font-serif text-left text-6xl  text-amber-400 my-4">
+            Desarrollador Web FullStack
             y Administrador de Empresas
           </h1>
         </div>
-        <div className="mt-4">
+        <div className="my-4">
           <p className="text-left text-gray-200">
           Explorando el apasionante mundo del desarrollo web y la administración de empresas, 
           inicio mi camino en estas dos disciplinas complementarias. A través de mis estudios y proyectos académicos,
