@@ -3,7 +3,9 @@
 ## Este portfolio fue realizado con: 
 
 🔥React
+
 🔥Tailwind
+
 🔥EmailJS para mensajería
 
-puedes visitar el sitio 👨🏽‍💻       🌐
+👨🏽‍💻 visita el sitio web       🌐
