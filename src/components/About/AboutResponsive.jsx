@@ -16,8 +16,8 @@ function AboutResponsive () {
             <h1 className="text-slate-500 italic font-josefin text-base text-center my-4">
             ``Abriendo puertas hacia un mundo de posibilidades.``
             </h1>
-            <a 
-            href={`${process.env.PUBLIC_URL}/CV%20-%20Daniel%20Castillo.pdf`}
+            <a
+            href={`${process.env.PUBLIC_URL}/CV - Daniel Castillo.pdf`}
             download="CV - Daniel Castillo.pdf"
             target="_blank" rel="noopener noreferrer"
             aria-label="Click to download my CV"
