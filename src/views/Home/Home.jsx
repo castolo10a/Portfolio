@@ -4,22 +4,22 @@ import Button from '../../components/Buttons/Button/Button'
 
 export default function Home () {
   return (
-    <div className="bg-gray-800 flex flex-col md:grid md:grid-cols-6 md:gap-4 md:place-content-center md:place-items-center m-auto">
+    <div className="flex flex-col md:grid md:grid-cols-5 md:gap-4 md:place-content-center md:place-items-center md:w-full min-h-screen bg-gray-800">
       <div className="flex  flex-col md:block md:col-start-1 md:col-end-5 p-7">
         <div className="mb-2">
           <div className="mb-6">
-            <h1 className="pb-2 text-left mb-8 text-6xl font-josefin underline underline-offset-8 underline-amber-400 text-amber-400">Hola</h1>
+            <h1 className="pb-2 text-left mb-2 text-4xl font-josefin underline underline-offset-8 underline-amber-400 text-amber-400">Hola</h1>
           </div>
-          <h1 className="font-serif text-left text-8xl text-gray-200 my-4">
+          <h1 className="font-serif text-left text-7xl text-gray-200 my-4">
             Soy Daniel Castillo
           </h1>
-          <h1 className="font-serif text-left text-6xl  text-amber-400 my-4">
+          <h1 className="font-serif text-left text-5xl  text-amber-400 my-4 text-justify">
             Desarrollador Web FullStack
             y Administrador de Empresas
           </h1>
         </div>
         <div className="my-4">
-          <p className="text-left text-gray-200">
+          <p className="text-left text-gray-200 text-justify text-lg">
           Explorando el apasionante mundo del desarrollo web y la administración de empresas, 
           inicio mi camino en estas dos disciplinas complementarias. A través de mis estudios y proyectos académicos,
           he comenzado a trazar mi rumbo hacia el éxito. Con dedicación y entusiasmo, busco crear soluciones digitales 
