@@ -65,6 +65,13 @@ export default function Contactame () {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    toast.success('Mensaje enviado', {
+      position: 'bottom-right',
+      autoClose: 2500,
+      closeOnClick: true,
+      pauseOnHover: false,
+      theme: 'colored'
+    })
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -80,14 +87,6 @@ export default function Contactame () {
           console.log(error.text)
         }
       )
-    toast.success('Mensaje enviado', {
-      position: 'bottom-right',
-      autoClose: 2500,
-      closeOnClick: true,
-      pauseOnHover: false,
-      theme: 'colored'
-    })
-
     setInput({
       user_name: '',
       user_email: '',
