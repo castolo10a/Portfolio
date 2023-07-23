@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
 import ButtonSubmit from '../../components/Buttons/ButtonSubmit/ButtonSubmit'
 import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify'
-import logoDC from "../../assets/DC-logo.png"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import logoDC from "../../assets/DC-logo.png";
 
 
 const initialState = {
@@ -66,11 +67,8 @@ export default function Contactame () {
   const handleSubmit = (event) => {
     event.preventDefault()
     toast.success('Mensaje enviado', {
-      position: 'bottom-right',
+      position: toast.POSITION.TOP_CENTER,
       autoClose: 2500,
-      closeOnClick: true,
-      pauseOnHover: false,
-      theme: 'colored'
     })
     emailjs
       .sendForm(

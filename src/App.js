@@ -3,8 +3,10 @@ import Header from "./components/Header/Header";
 import Home from "./views/Home/Home";
 import Footer from "./components/Footer/Footer";
 import AboutMe from "./views/AboutMe/AboutMe";
-import Projects from "./views/Projects/Projects"
-import Contact from "./views/Contact/Contact"
+import Projects from "./views/Projects/Projects";
+import Contact from "./views/Contact/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/Contact" element={<Contact/>} />
       </Routes>
+      <ToastContainer />
       <Footer />
     </div>
   );

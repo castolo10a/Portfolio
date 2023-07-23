@@ -39,7 +39,7 @@ function MyProjects ({
             />
             <div className="pr-4">
               <Button
-                text={'Ir a la web'}
+                text={'Demo'}
                 path={urlProject}
                 window={'_blank'}
                 relation={'noopener noreferrer'}

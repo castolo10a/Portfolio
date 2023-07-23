@@ -65,7 +65,7 @@ function ProyectoResponsive ({
         </div>
         <div className="py-2 px-4">
           <Button
-            text={'Ir a la web'}
+            text={'Demo'}
             path={urlProject}
             window={'_blank'}
             relation={'noopener noreferrer'}
