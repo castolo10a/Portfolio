@@ -1,7 +1,7 @@
-import Button from "../Buttons/Button/Button"
 import { ICONS_BY_TECH } from "../../constants/iconsByTech"
 import { IMAGE_BY_PROJECT } from "../../constants/imageByProjects"
 import ButtonGithub from "../Buttons/ButtonGitHub/ButtonGitHub"
+import ButtonDemo from "../Buttons/ButtonDemo/ButtonDemo"
 
 function MyProjects ({
   title,
@@ -34,15 +34,10 @@ function MyProjects ({
           <div className="flex flex-row-reverse pr-4 ">
             <ButtonGithub
               path={urlGithub}
-              window={'_blank'}
-              relation={'noopener noreferrer'}
             />
             <div className="pr-4">
-              <Button
-                text={'Demo'}
+              <ButtonDemo
                 path={urlProject}
-                window={'_blank'}
-                relation={'noopener noreferrer'}
               />
             </div>
           </div>
