@@ -5,6 +5,7 @@ import {
   SiExpress,
   SiPostgresql,
   SiSequelize,
+  SiTailwindcss
 } from 'react-icons/si'
 
 export const ICONS_BY_TECH = [
@@ -31,5 +32,9 @@ export const ICONS_BY_TECH = [
   {
     name: 'Sequelize',
     icon: <SiSequelize />
+  },
+  {
+    name: 'Tailwindcss',
+    icon: <SiTailwindcss />
   }
 ]
