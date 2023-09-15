@@ -1,7 +1,7 @@
-import Button from "../Buttons/Button/Button"
 import { ICONS_BY_TECH } from "../../constants/iconsByTech"
 import { IMAGE_BY_PROJECT } from "../../constants/imageByProjects"
 import ButtonGithub from "../Buttons/ButtonGitHub/ButtonGitHub"
+import ButtonDemo from "../Buttons/ButtonDemo/ButtonDemo"
 
 function ProyectoResponsive ({
   title,
@@ -64,16 +64,11 @@ function ProyectoResponsive ({
           </div>
         </div>
         <div className="py-2 px-4">
-          <Button
-            text={'Visita el sitio →'}
+          <ButtonDemo
             path={urlProject}
-            window={'_blank'}
-            relation={'noopener noreferrer'}
           />
           <ButtonGithub
             path={urlGithub}
-            window={'_blank'}
-            relation={'noopener noreferrer'}
           />
         </div>
       </div>
