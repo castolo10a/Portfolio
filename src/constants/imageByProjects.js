@@ -1,6 +1,7 @@
 import HenryMarketPic from "../assets/HenryMarketPic.png";
 import AppFoodPic from "../assets/AppFoodPic.png";
 import KolozoPic from "../assets/KolozoPic.png";
+import vidaAnimal from '../assets/vidaAnimalPic.png'
 
 export const IMAGE_BY_PROJECT = [
   {
@@ -14,5 +15,9 @@ export const IMAGE_BY_PROJECT = [
   {
     name: 'Kolozo',
     src: KolozoPic
+  },
+  {
+    name: 'Vida_animal',
+    src: vidaAnimal
   }
 ]

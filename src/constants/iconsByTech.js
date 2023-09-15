@@ -5,7 +5,8 @@ import {
   SiExpress,
   SiPostgresql,
   SiSequelize,
-  SiTailwindcss
+  SiTailwindcss,
+  SiNextdotjs
 } from 'react-icons/si'
 
 export const ICONS_BY_TECH = [
@@ -36,5 +37,9 @@ export const ICONS_BY_TECH = [
   {
     name: 'Tailwindcss',
     icon: <SiTailwindcss />
+  },
+  {
+    name: 'NextJs',
+    icon: <SiNextdotjs />
   }
 ]

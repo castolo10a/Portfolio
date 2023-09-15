@@ -1,5 +1,33 @@
 [
   {
+    "titleProject": "Vida Animal",
+    "content": "(Proyecto para terceros) - Desarrollo de una SPA utilizando React y Next.js para el Centro Médico Veterinario 'Vida Animal'. Esta página presenta información detallada sobre el centro, incluye enlaces a redes sociales, un formulario de contacto integrado para consultas directas, y un práctico botón flotante de WhatsApp para una comunicación ágil. Todo el diseño se ha realizado con Tailwind CSS, asegurando una experiencia moderna y completamente responsive. La página incluye secciones clave como 'Inicio', 'Servicios', 'Quiénes Somos' y 'Contacto', además de una barra de navegación y un footer con opciones adicionales para una navegación sencilla y completa por parte de los usuarios.",
+    "urlProject": "https://vida-animal.netlify.app/",
+    "urlGithub": "https://github.com/castolo10a/Vida-Animal",
+    "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "Vida_animal"
+    },
+    "contentTecnologies": [
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "Next",
+        "href": "https://nextjs.org/"
+      },
+      {
+        "title": "Node",
+        "href": "http://nodejs.org/es/"
+      },
+      {
+        "title": "Tailwindcss",
+        "href": "https://tailwindcss.com/"
+      }
+    ]
+  },
+  {
     "titleProject": "Kolozo",
     "content": "(Proyecto para terceros) - Desarrollo de una SPA completa en React para un restaurante, presentando información detallada, enlaces a redes sociales, formulario de contacto, botón flotante de WhatsApp, todo estilizado con Tailwind CSS para una experiencia responsive y moderna.",
     "urlProject": "https://gastrobarkolozo.netlify.app/",

@@ -42,7 +42,7 @@ function MyProjects ({
             </div>
           </div>
         </div>
-        <p className="text-justify tracking-wide font-mukta pr-4 indent-4 text-gray-200">
+        <p className="text-justify tracking-wide font-mukta pr-4 text-gray-200">
           {content}
         </p>
         <div>
