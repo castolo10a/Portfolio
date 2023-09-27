@@ -17,11 +17,11 @@ function ProyectoResponsive ({
   )
   return (
     <div className="flex flex-col max-w-full md:hidden border border-solid border-gray-500/75 rounded-xl px-2">
-      <div className="flex flex-col items-center px-2 py-10">
+      <div className="flex flex-col items-center px-2 py-2">
         <h1 className="text-2xl underline underline-offset-4 text-gray-500/75">
           {title}
         </h1>
-        <div className="mt-8 -mb-4">
+        <div className="my-4">
           <img
             src={imagenByProject.src}
             alt={image.alt}
@@ -30,7 +30,7 @@ function ProyectoResponsive ({
         </div>
       </div>
       <div className="flex flex-col justify-center">
-        <p className="text-center tracking-wide p-4 indent-4 text-gray-200">
+        <p className="text-center tracking-wide px-2 indent-4 text-gray-200">
           {content}
         </p>
         <div className="flex flex-col items-center">
