@@ -11,7 +11,7 @@ function Project ({
   urlGithub
 }) {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between p-4">
       <MyProjects title={title} content={content} urlProject={urlProject} titleTech={titleTech} contentTech={contentTech} image={image} urlGithub={urlGithub}/>
       <MyProjectsResponsive title={title} content={content} urlProject={urlProject} titleTech={titleTech} contentTech={contentTech} image={image} urlGithub={urlGithub}/>
     </div>

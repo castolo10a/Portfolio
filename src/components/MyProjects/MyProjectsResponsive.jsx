@@ -16,7 +16,7 @@ function ProyectoResponsive ({
     (project) => project.name === image.alt
   )
   return (
-    <div className="flex flex-col max-w-full md:hidden">
+    <div className="flex flex-col max-w-full md:hidden border border-solid border-gray-500/75 rounded-xl px-2">
       <div className="flex flex-col items-center px-2 py-10">
         <h1 className="text-2xl underline underline-offset-4 text-gray-500/75">
           {title}

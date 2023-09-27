@@ -16,7 +16,7 @@ function MyProjects ({
     (project) => project.name === image.alt
   )
   return (
-    <div className="hidden md:flex">
+    <div className="hidden md:flex border border-solid border-gray-500/75 rounded-xl px-2">
       <div className="flex w-2/6 m-4 mr-10 py-14">
         <img
           src={imagenByProject.src}
