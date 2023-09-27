@@ -18,7 +18,7 @@ function ProyectoResponsive ({
   return (
     <div className="flex flex-col max-w-full md:hidden">
       <div className="flex flex-col items-center px-2 py-10">
-        <h1 className="text-2xl underline underline-offset-4 font-josefin text-gray-200">
+        <h1 className="text-2xl underline underline-offset-4 text-gray-500/75">
           {title}
         </h1>
         <div className="mt-8 -mb-4">
@@ -30,11 +30,11 @@ function ProyectoResponsive ({
         </div>
       </div>
       <div className="flex flex-col justify-center">
-        <p className="text-center tracking-wide font-mukta p-4 indent-4 text-amber-400">
+        <p className="text-center tracking-wide p-4 indent-4 text-gray-200">
           {content}
         </p>
         <div className="flex flex-col items-center">
-          <h1 className="text-xl text-center pt-3 font-josefin text-gray-200">
+          <h1 className="text-xl text-center pt-3 text-gray-500/75">
             {titleTech}
           </h1>
           <div className="flex flex-wrap justify-center text-sm py-2 px-4">
@@ -46,14 +46,14 @@ function ProyectoResponsive ({
                 return (
                     <div
                       key={content.title}
-                      className="flex items-center pr-2 text-gray-200"
+                      className="flex items-center pr-2  transition-colors text-gray-200 hover:text-gray-500/75"
                     >
                       {iconByTech?.icon}
                       <a
                         href={content.href}
                         target={'_blank'}
                         rel="noreferrer"
-                        className="px-1 text-amber-400"
+                        className="px-1"
                       >
                         {content.title}
                       </a>

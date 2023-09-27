@@ -27,7 +27,7 @@ function MyProjects ({
       <div className="container flex flex-col justify-center">
         <div className="flex justify-between items-center py-2 pb-3">
           <div>
-            <h1 className="text-2xl underline underline-offset-4 font-josefin text-amber-400">
+            <h1 className="text-2xl underline underline-offset-4 text-gray-500/75">
               {title}
             </h1>
           </div>
@@ -42,11 +42,11 @@ function MyProjects ({
             </div>
           </div>
         </div>
-        <p className="text-justify tracking-wide font-mukta pr-4 text-gray-200">
+        <p className="text-justify tracking-wide pr-4 text-gray-200">
           {content}
         </p>
         <div>
-          <h1 className="text-lg pt-3 font-josefin text-amber-400">
+          <h1 className="text-lg pt-3 text-gray-500/75">
             {titleTech}
           </h1>
           <div className="flex justify-center text-sm ">
@@ -58,14 +58,14 @@ function MyProjects ({
                 return (
                     <div
                       key={content.title}
-                      className="flex items-center pr-2 transition-colors text-gray-200 hover:text-amber-400"
+                      className="flex items-center pr-2 transition-colors text-gray-200 hover:text-gray-500/75"
                     >
                       {iconByTech?.icon}
                       <a
                         href={content.href}
                         target={'_blank'}
                         rel="noreferrer"
-                        className="px-1 selection:bg-green-400 selection:text-green-900"
+                        className="px-1"
                       >
                         {content.title}
                       </a>

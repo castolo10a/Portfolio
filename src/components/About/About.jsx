@@ -1,46 +1,45 @@
-import { Link } from 'react-router-dom'
-import profile from '../../assets/daniel.png'
-import Button from '../Buttons/Button/Button'
+import {DiCss3, DiGithubBadge, DiHtml5, DiJsBadge, DiMongodb, DiMysql, DiNodejsSmall, DiPostgresql, DiReact, DiTrello, DiVisualstudio, DiWindows} from 'react-icons/di'
+import { SiExpress, SiGit, SiInsomnia, SiRedux, SiSequelize, SiTailwindcss } from 'react-icons/si'
+import OtherButton from '../Buttons/OtherButton/OtherButton'
+import ButtonCV from '../Buttons/ButtonCV/ButtonCV'
 
-function About () {
-  return (
-    <div className="hidden md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center w-full bg-gray-800 overflow-x-hidden">
-      <div className="col-start-1 col-end-4 m-4 max-w-sm">
-        <div className="flex flex-col">
-          <img className='rounded-lg' src={profile} alt={'profile '} />
-          <div>
-            <h1 className="text-slate-500 italic font-josefin text-base text-center">
-              ``Abriendo puertas hacia un mundo de posibilidades.``
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div className="md:col-start-4 md:col-end-8 m-5 mr-14 p-10 rounded-lg">
-        <div className="flex flex-col">
-          <div className="flex flex-row justify-between items-center">
-            <h1 className="underline underline-offset-8 mb-8 text-4xl font-josefin underline-amber-400 text-amber-400 ">
-              Sobre mí
-            </h1>
-            <div className="mb-8">
-              <Button path={'/Projects'} text={'Mis proyectos'} />
+export default function About () {
+    const fileUrl = process.env.PUBLIC_URL + '/CV - Daniel Castillo.pdf';
+
+    return (
+        <section id='AboutMe' className="py-8 md:h-screen px-4">
+            <div className="mx-auto w-full md:max-w-2xl text-center">
+                <h2 className="text-gray-500/75 py-8 text-center text-2xl uppercase font-bold underline underline-offset-[15px]">Sobre Mí</h2>
+
+                <p className="mt-4 text-black text-center md:text-left">
+                    Soy Daniel Castillo. Desarrollador Web Full Stack y Administrador de Empresas apasionado por la tecnología y los negocios. Mi viaje comenzó durante mis estudios en Administración de Empresas, donde descubrí la fascinante intersección entre estos dos mundos. A través de proyectos académicos, demostré mi dedicación para crear aplicaciones web excepcionales y funcionales. <br /> <br /> Actualmente, estoy ampliando mis habilidades técnicas como estudiante del Servicio Nacional de Aprendizaje (SENA), donde curso un programa técnico titulado en Programación de Aplicaciones para Dispositivos Móviles. Mi objetivo es fusionar esta formación con mi experiencia empresarial para crear soluciones digitales innovadoras que impulsen el crecimiento de las empresas. Siempre estoy dispuesto a aprender y colaborar en emocionantes proyectos. ¡Espero poder conectarme contigo y construir el futuro juntos!
+                </p>
+                <h1 className="text-gray-500/75 pt-8 pb-4 text-left uppercase font-bold">Tecnologías y Herramientas que Conozco:</h1>
+                <div className="flex flex-row justify-start md:gap-1">
+                    <DiHtml5 size={30}/>
+                    <DiCss3 size={30}/>
+                    <DiJsBadge size={30}/>
+                    <DiReact size={30}/>
+                    <SiRedux size={30}/>
+                    <SiTailwindcss size={30}/>
+                    <DiNodejsSmall size={30}/>
+                    <SiExpress size={30}/>
+                    <SiSequelize size={30}/>
+                    <DiPostgresql size={30}/>
+                    <DiMysql size={30}/>
+                    <DiMongodb size={30}/>
+                    <SiInsomnia size={30}/>
+                    <DiWindows size={30}/>
+                    <DiVisualstudio size={30}/>
+                    <DiTrello size={30}/>
+                    <DiGithubBadge size={30}/>
+                    <SiGit size={30}/>
+                </div>
+                <div className='flex flex-row items-center justify-center py-8 space-x-4'>
+                    <OtherButton path='/#Contact' text='Contacto' className='px-3 py-1 text-base text-gray-200 bg-gray-500/75 border border-solid rounded-xl transition-colors hover:bg-black hover:bg-opacity-20 hover:text-black md:w-auto md:mb-0'/>
+                    <ButtonCV path={fileUrl} />
+                </div>
             </div>
-          </div>
-          <div>
-            <h1 className="font-serif text-left text-6xl text-gray-200 mb-3">
-                Hola, de nuevo. ¡Sientete libre de explorar mi portfolio!
-            </h1>
-            <p className="text-justify tracking-wide text-lg text-amber-400 font-mukta">
-                Mi pasión por el desarrollo web nació durante mis estudios en Administración de Empresas, donde descubrí el fascinante mundo digital.
-                Aunque no cuento con experiencia laboral en desarrollo, he participado activamente en proyectos académicos, donde he demostrado mi dedicación y habilidades en la creación de aplicaciones web.
-                Mi enfoque integral, combinando conocimientos en Administración de Empresas y desarrollo web, me permite abordar desafíos desde una perspectiva única y versátil.
-                Mi objetivo es ayudar a las empresas a crecer y prosperar a través de la tecnología y la innovación. Estoy emocionado por construir experiencias digitales cautivadoras y funcionales que impulsen el éxito empresarial.
-                ¡Unámonos y creemos algo sorprendente juntos! Si buscas un desarrollador web comprometido, creativo y dispuesto a aprender,<Link className="underline after:content-['_↗'] ..." to='/Contact'>¡no dudes en contactarme!</Link>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+        </section>
+    )
 }
-
-export default About

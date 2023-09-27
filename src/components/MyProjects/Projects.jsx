@@ -5,8 +5,8 @@ export default function Projects () {
 
   const data = ProjectGitHub 
   return (
-    <div className="flex flex-col bg-gray-800 w-full overflow-y-hidden">
-      <h1 className="m-4 py-1 pt-6 text-5xl text-center md:text-left font-josefin underline underline-offset-8 underline-amber-400 text-amber-400 ">
+    <div id='Projects' className="py-8 flex flex-col w-full bg-colorSection">
+      <h1 className="text-gray-500/75 py-8 text-center text-2xl uppercase font-bold underline underline-offset-[15px]">
         Proyectos
       </h1>
 
