@@ -71,7 +71,7 @@ export default function Contact () {
           autoClose: 2500,
         })
       }else{
-        toast.success('Mensaje enviado', {
+        toast.success('Mensaje enviado correctamente', {
           position: toast.POSITION.TOP_CENTER,
           autoClose: 2500,
         })
