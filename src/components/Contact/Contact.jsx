@@ -77,10 +77,10 @@ export default function Contact () {
         })
         emailjs
         .sendForm(
-          process.env.service_portfolio,
-          process.env.contact_form,
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
           form.current,
-          process.env.lidwg42l8sYU8kJBu
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
         .then(
           (result) => {
@@ -94,9 +94,6 @@ export default function Contact () {
       }
     }
 
-//     REACT_APP_EMAILJS_SERVICE_ID=service_portfolio
-// REACT_APP_EMAILJS_TEMPLATE_ID=contact_form
-// REACT_APP_EMAILJS_PUBLIC_KEY=lidwg42l8sYU8kJBu
 
     return (
       <section id='Contact' className="py-8">
