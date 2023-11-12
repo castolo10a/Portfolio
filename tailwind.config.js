@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage:{
         'footer' : "url('./assets/images/footer.png')",
-        'setup' : "url('./assets/images/setup.png')"
+        'setup' : "url('./assets/images/setup.webp')"
       },
       colors:{
         'colorSection' : '#050303'
