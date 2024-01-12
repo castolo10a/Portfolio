@@ -1,4 +1,4 @@
-import profile from '../../assets/images/ProfilePic.png';
+import profile from '../../assets/images/ProfilePic.webp';
 import Navbar from '../Navbar/Navbar';
 import Button from '../Buttons/Button/Button';
 import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";

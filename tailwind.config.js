@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'footer' : "url('./assets/images/footer.png')",
+        'footer' : "url('./assets/images/footer.webp')",
         'setup' : "url('./assets/images/setup.webp')"
       },
       colors:{

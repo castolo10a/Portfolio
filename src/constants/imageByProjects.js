@@ -1,7 +1,7 @@
-import HenryMarketPic from "../assets/images/HenryMarketPic.png";
-import AppFoodPic from "../assets/images/AppFoodPic.png";
-import KolozoPic from "../assets/images/KolozoPic.png";
-import vidaAnimal from '../assets/images/vidaAnimalPic.png'
+import HenryMarketPic from "../assets/images/HenryMarketPic.webp";
+import AppFoodPic from "../assets/images/AppFoodPic.webp";
+import KolozoPic from "../assets/images/KolozoPic.webp";
+import vidaAnimal from '../assets/images/vidaAnimalPic.webp'
 
 export const IMAGE_BY_PROJECT = [
   {
