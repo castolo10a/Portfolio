@@ -18,11 +18,11 @@
         "href": "https://nextjs.org/"
       },
       {
-        "title": "Node",
+        "title": "NodeJs",
         "href": "http://nodejs.org/es/"
       },
       {
-        "title": "Tailwindcss",
+        "title": "TailwindCSS",
         "href": "https://tailwindcss.com/"
       }
     ]
@@ -42,11 +42,11 @@
         "href": "http://es.reactjs.org"
       },
       {
-        "title": "Node",
+        "title": "NodeJs",
         "href": "http://nodejs.org/es/"
       },
       {
-        "title": "Tailwindcss",
+        "title": "TailwindCSS",
         "href": "https://tailwindcss.com/"
       }
     ]
@@ -70,7 +70,7 @@
           "href": "http://es.redux.js.org"
         },
         {
-          "title": "Node",
+          "title": "NodeJs",
           "href": "http://nodejs.org/es/"
         },
         {
@@ -106,7 +106,7 @@
           "href": "http://es.redux.js.org"
         },
         {
-          "title": "Node",
+          "title": "NodeJs",
           "href": "http://nodejs.org/es/"
         },
         {
