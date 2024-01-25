@@ -19,7 +19,7 @@ export const ICONS_BY_TECH = [
     icon: <SiRedux />
   },
   {
-    name: 'Node',
+    name: 'NodeJs',
     icon: <SiNodedotjs />
   },
   {
@@ -35,7 +35,7 @@ export const ICONS_BY_TECH = [
     icon: <SiSequelize />
   },
   {
-    name: 'Tailwindcss',
+    name: 'TailwindCSS',
     icon: <SiTailwindcss />
   },
   {
