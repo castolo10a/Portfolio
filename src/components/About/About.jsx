@@ -1,5 +1,5 @@
 import {DiCss3, DiGithubBadge, DiHtml5, DiJsBadge, DiNodejsSmall, DiPostgresql, DiReact, DiTrello, DiVisualstudio, DiWindows} from 'react-icons/di'
-import { SiExpress, SiGit, SiInsomnia, SiNextdotjs ,SiRedux, SiRea, SiSequelize, SiTailwindcss } from 'react-icons/si'
+import { SiExpress, SiGit, SiInsomnia, SiNextdotjs ,SiRedux, SiSequelize, SiTailwindcss } from 'react-icons/si'
 import OtherButton from '../Buttons/OtherButton/OtherButton'
 import ButtonCV from '../Buttons/ButtonCV/ButtonCV'
 
