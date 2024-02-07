@@ -1,5 +1,5 @@
-import {DiCss3, DiGithubBadge, DiHtml5, DiJsBadge, DiMongodb, DiMysql, DiNodejsSmall, DiPostgresql, DiReact, DiTrello, DiVisualstudio, DiWindows} from 'react-icons/di'
-import { SiExpress, SiGit, SiInsomnia, SiRedux, SiSequelize, SiTailwindcss } from 'react-icons/si'
+import {DiCss3, DiGithubBadge, DiHtml5, DiJsBadge, DiNodejsSmall, DiPostgresql, DiReact, DiTrello, DiVisualstudio, DiWindows} from 'react-icons/di'
+import { SiExpress, SiGit, SiInsomnia, SiNextdotjs ,SiRedux, SiRea, SiSequelize, SiTailwindcss } from 'react-icons/si'
 import OtherButton from '../Buttons/OtherButton/OtherButton'
 import ButtonCV from '../Buttons/ButtonCV/ButtonCV'
 
@@ -20,14 +20,13 @@ export default function About () {
                     <DiCss3 size={30}/>
                     <DiJsBadge size={30}/>
                     <DiReact size={30}/>
+                    <SiNextdotjs size={30}/>
                     <SiRedux size={30}/>
                     <SiTailwindcss size={30}/>
                     <DiNodejsSmall size={30}/>
                     <SiExpress size={30}/>
                     <SiSequelize size={30}/>
                     <DiPostgresql size={30}/>
-                    <DiMysql size={30}/>
-                    <DiMongodb size={30}/>
                     <SiInsomnia size={30}/>
                     <DiWindows size={30}/>
                     <DiVisualstudio size={30}/>
