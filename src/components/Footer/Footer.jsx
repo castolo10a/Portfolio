@@ -16,7 +16,7 @@ export default function Footer () {
             </div>
 
             <p className="mx-auto mt-6 max-w-2xl text-center leading-relaxed text-gray-200">
-              ¡Gracias por visitar mi perfil! Actualmente me encuentro trabajando en mis prácticas con una empresa como parte de mi programa técnico en el SENA. Si tienes alguna pregunta sobre mis proyectos o simplemente deseas saludar, ¡no dudes en escribirme!
+              ¡Gracias por visitar mi perfil! <br></br> Si tienes alguna pregunta sobre mis proyectos o simplemente deseas saludar, ¡no dudes en escribirme!
             </p>
 
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
