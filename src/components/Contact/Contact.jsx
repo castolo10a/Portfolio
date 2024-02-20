@@ -105,7 +105,7 @@ export default function Contact () {
       <div className="w-full mx-auto px-4 md:px-24 max-w-6xl">
         <div className="py-8">
           <p className="text-black text-xl text-center md:pb-4 mx-auto">
-            Si deseas trabajar conmigo o tienes alguna pregunta, estaré encantado de ayudarte. No dudes en ponerte en contacto para discutir futuros proyectos y oportunidades laborales.
+            Si tienes alguna pregunta o estás interesado en colaborar en proyectos externos, ¡estaré encantado de ayudarte! No dudes en ponerte en contacto conmigo para discutir posibles oportunidades. Aunque en este momento me encuentro comprometido con mi trabajo actual, siempre estoy abierto a explorar nuevas posibilidades y conexiones en la industria.
           </p>
         </div>
         <form className="flex flex-col items-center mx-auto text-center" ref={form} onSubmit={handleSubmit}>
