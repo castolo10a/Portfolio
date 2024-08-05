@@ -6,7 +6,7 @@ export default function Footer () {
 
     return (
       <footer className="bg-footer bg-cover">
-          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
             <div className="flex justify-center text-xl text-gray-200">
               <a href='/#Home'>
                 <span>
@@ -15,11 +15,12 @@ export default function Footer () {
               </a>
             </div>
 
-            <p className="mx-auto mt-6 max-w-2xl text-center leading-relaxed text-gray-200">
-              ¡Gracias por visitar mi perfil! <br></br> Si tienes alguna pregunta sobre mis proyectos o simplemente deseas saludar, ¡no dudes en escribirme!
+            <p className="mx-auto mt-4 max-w-2xl text-center leading-relaxed text-gray-200">
+            ¡Gracias por visitar mi portafolio! <br></br> 
+            Si tienes alguna pregunta sobre mis proyectos o estás interesado en discutir posibles oportunidades laborales, ¡me encantaría saber de ti! No dudes en ponerte en contacto para conversar sobre cómo podemos colaborar o explorar nuevas oportunidades juntos. Estoy entusiasmado por conectar con profesionales y empresas en la industria del desarrollo web y móvil.
             </p>
 
-            <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+            <ul className="mt-10 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
               <li>
                 <a className="text-gray-200 transition hover:text-gray-500/75" href="/#Home">
                   Inicio

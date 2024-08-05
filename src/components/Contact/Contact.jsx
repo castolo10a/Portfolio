@@ -98,14 +98,14 @@ export default function Contact () {
     return (
       <section id='Contact' className="py-8">
       <div className="text-center">
-        <h1 className="text-gray-500/75 py-8 text-center text-2xl uppercase font-bold underline underline-offset-[15px]">
+        <h1 className="text-gray-500/75 pt-8 text-center text-2xl uppercase font-bold underline underline-offset-[15px]">
           Contáctame
         </h1>
       </div>
       <div className="w-full mx-auto px-4 md:px-24 max-w-6xl">
         <div className="py-8">
-          <p className="text-black text-xl text-center md:pb-4 mx-auto">
-            Si tienes alguna pregunta o estás interesado en colaborar en proyectos externos, ¡estaré encantado de ayudarte! No dudes en ponerte en contacto conmigo para discutir posibles oportunidades. Aunque en este momento me encuentro comprometido con mi trabajo actual, siempre estoy abierto a explorar nuevas posibilidades y conexiones en la industria.
+          <p className="text-black text-md text-center md:pb-4 mx-auto">
+          Actualmente, estoy en la fase final de mis prácticas y estoy comenzando a explorar nuevas oportunidades profesionales. Si estás interesado en colaborar en proyectos o si tienes una vacante que crees que se ajusta a mi perfil, ¡me encantaría saber de ti! Estoy abierto a nuevas posibilidades y conexiones en la industria del desarrollo web y móvil. No dudes en ponerte en contacto para discutir cómo podemos trabajar juntos o para conocer más sobre las oportunidades disponibles. Estoy entusiasmado por el próximo capítulo de mi carrera y listo para contribuir a proyectos innovadores.
           </p>
         </div>
         <form className="flex flex-col items-center mx-auto text-center" ref={form} onSubmit={handleSubmit}>
