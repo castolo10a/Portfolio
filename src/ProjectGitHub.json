@@ -1,5 +1,29 @@
 [
   {
+    "titleProject": "Products Page",
+    "content": "Desarrollo de una SPA con React y estilizada con TailwindCSS, diseñada para mostrar un listado de productos de manera dinámica y eficiente. La aplicación permite a los usuarios filtrar productos según diversas categorías, rangos de precio y disponibilidad en stock, ofreciendo una experiencia de navegación intuitiva y personalizada.",
+    "urlProject": "https://listproductsfilters.netlify.app/",
+    "urlGithub": "https://github.com/castolo10a/products-card-filter",
+    "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "Products Page"
+    },
+    "contentTecnologies": [
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "NodeJs",
+        "href": "http://nodejs.org/es/"
+      },
+      {
+        "title": "TailwindCSS",
+        "href": "https://tailwindcss.com/"
+      }
+    ]
+  },
+  {
     "titleProject": "Vida Animal",
     "content": "(Proyecto para terceros) - Desarrollo de una SPA utilizando React y Next.js para el Centro Médico Veterinario 'Vida Animal'. Esta página presenta información detallada sobre el centro, incluye enlaces a redes sociales, un formulario de contacto integrado para consultas directas, y un práctico botón flotante de WhatsApp para una comunicación ágil. Todo el diseño se ha realizado con Tailwind CSS, asegurando una experiencia moderna y completamente responsive. La página incluye secciones clave como 'Inicio', 'Servicios', 'Quiénes Somos' y 'Contacto', además de una barra de navegación y un footer con opciones adicionales para una navegación sencilla y completa por parte de los usuarios.",
     "urlProject": "https://vida-animal.netlify.app/",

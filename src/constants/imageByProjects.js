@@ -2,6 +2,7 @@ import HenryMarketPic from "../assets/images/HenryMarketPic.webp";
 import AppFoodPic from "../assets/images/AppFoodPic.webp";
 import KolozoPic from "../assets/images/KolozoPic.webp";
 import vidaAnimal from '../assets/images/vidaAnimalPic.webp'
+import ProductPage from '../assets/images/ProductListPic.webp'
 
 export const IMAGE_BY_PROJECT = [
   {
@@ -19,5 +20,9 @@ export const IMAGE_BY_PROJECT = [
   {
     name: 'Vida_animal',
     src: vidaAnimal
+  },
+  {
+    name: 'Products Page',
+    src: ProductPage
   }
 ]
