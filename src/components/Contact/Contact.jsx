@@ -105,7 +105,7 @@ export default function Contact () {
       <div className="w-full mx-auto px-4 md:px-24 max-w-6xl">
         <div className="py-8">
           <p className="text-black text-md text-center md:pb-4 mx-auto">
-          Actualmente, estoy en la fase final de mis prácticas y estoy comenzando a explorar nuevas oportunidades profesionales. Si estás interesado en colaborar en proyectos o si tienes una vacante que crees que se ajusta a mi perfil, ¡me encantaría saber de ti! Estoy abierto a nuevas posibilidades y conexiones en la industria del desarrollo web y móvil. No dudes en ponerte en contacto para discutir cómo podemos trabajar juntos o para conocer más sobre las oportunidades disponibles. Estoy entusiasmado por el próximo capítulo de mi carrera y listo para contribuir a proyectos innovadores.
+          Actualmente, estoy en búsqueda de nuevas oportunidades en el desarrollo web y móvil. Estoy abierto a colaborar en proyectos innovadores y a conectar con personas y empresas que busquen talento en este campo. <br /><br />Si tienes una vacante que se ajuste a mi perfil o te interesa trabajar juntos, no dudes en contactarme. ¡Estoy listo para asumir nuevos retos y aportar mis habilidades al crecimiento de tu equipo o proyecto!
           </p>
         </div>
         <form className="flex flex-col items-center mx-auto text-center" ref={form} onSubmit={handleSubmit}>

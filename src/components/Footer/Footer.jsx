@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiMicrosoftoutlook } from "react-icons/si";
 
 export default function Footer () {
@@ -16,8 +16,8 @@ export default function Footer () {
             </div>
 
             <p className="mx-auto mt-4 max-w-2xl text-center leading-relaxed text-gray-200">
-            ¡Gracias por visitar mi portafolio! <br></br> 
-            Si tienes alguna pregunta sobre mis proyectos o estás interesado en discutir posibles oportunidades laborales, ¡me encantaría saber de ti! No dudes en ponerte en contacto para conversar sobre cómo podemos colaborar o explorar nuevas oportunidades juntos. Estoy entusiasmado por conectar con profesionales y empresas en la industria del desarrollo web y móvil.
+              ¡Gracias por visitar mi portafolio! <br></br>
+              Si estás buscando un desarrollador web y móvil o tienes una oportunidad que pueda encajar con mi perfil, ¡me encantaría saber de ti! No dudes en contactarme para conversar sobre cómo podemos trabajar juntos. Estoy listo para nuevos retos y abierto a conectar con profesionales y empresas en la industria.
             </p>
 
             <ul className="mt-10 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
@@ -72,17 +72,6 @@ export default function Footer () {
                   className="text-gray-200 transition hover:text-gray-500/75"
                 >
                   <FaGithub size={23} />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://twitter.com/castolo10a"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-gray-200 transition hover:text-gray-500/75"
-                >
-                  <FaTwitter size={23} />
                 </a>
               </li>
 

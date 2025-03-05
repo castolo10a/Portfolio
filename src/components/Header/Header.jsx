@@ -1,7 +1,7 @@
 import profile from '../../assets/images/ProfilePic.webp';
 import Navbar from '../Navbar/Navbar';
 import Button from '../Buttons/Button/Button';
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiMicrosoftoutlook } from "react-icons/si"
 
 export default function Header () {
@@ -42,18 +42,6 @@ export default function Header () {
                     <FaGithub size={23} />
                     </a>
                 </li>
-
-                <li>
-                    <a
-                    href="https://twitter.com/castolo10a"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="text-gray-200 transition hover:text-gray-500/75"
-                    >
-                    <FaTwitter size={23} />
-                    </a>
-                </li>
-
 
                 <li>
                     <a
