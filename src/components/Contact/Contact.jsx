@@ -1,81 +1,80 @@
 import { useRef, useState } from "react";
 import ButtonSubmit from "../Buttons/ButtonSubmit/ButtonSubmit";
-import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const initialState = {
-    user_name: '',
-    user_email: '',
-    message: ''
-  }
+  user_name: "",
+  user_email: "",
+  message: "",
+};
 
-export default function Contact () {
-    const form = useRef();
-    const [input, setInput] = useState(initialState);
-    const [err, setErr] = useState(initialState);
-  
-    const validateEmail = (email) => {
-      const regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
-      return regex.test(email)
+export default function Contact() {
+  const form = useRef();
+  const [input, setInput] = useState(initialState);
+  const [err, setErr] = useState(initialState);
+
+  const validateEmail = (email) => {
+    const regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    return regex.test(email);
+  };
+
+  const validateName = (name) => {
+    const nombreExpReg = /^[a-zA-Z\s]*$/;
+    return nombreExpReg.test(name);
+  };
+
+  const validate = (input) => {
+    const err = {};
+
+    if (!input.user_name) {
+      err.user_name = "Debe ingresar un nombre";
     }
-  
-    const validateName = (name) => {
-      const nombreExpReg = /^[a-zA-Z\s]*$/;
-      return nombreExpReg.test(name)
+    if (!validateName(input.user_name)) {
+      err.user_name = "Debe ingresar un nombre valido";
     }
-  
-    const validate = (input) => {
-      const err = {}
-  
-      if (!input.user_name) {
-        err.user_name = 'Debe ingresar un nombre'
-      }
-      if (!validateName(input.user_name)) {
-          err.user_name = 'Debe ingresar un nombre valido'
-      }
-      if (!input.message) {
-        err.message = 'Debe ingresar un mensaje'
-      }
-      if (!input.user_email) {
-        err.user_email = 'Debe ingresar un correo'
-      }
-      if (!validateEmail(input.user_email)) {
-        err.user_email = 'Debe ingresar un correo valido'
-      }
-      return err
+    if (!input.message) {
+      err.message = "Debe ingresar un mensaje";
     }
-  
-    const handleChange = (event) => {
-      const name = event.target.name
-      const value = event.target.value
-      setInput((prev) => ({
-        ...prev,
-        [name]: value
-      }))
-  
-      setErr(
-        validate({
-          ...input,
-          [name]: value
-        })
-      )
+    if (!input.user_email) {
+      err.user_email = "Debe ingresar un correo";
     }
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      if(Object.values(err).length > 0 || Object.values(input).length === 0){
-        toast.error('Revisa los datos ingresados', {
-          position: toast.POSITION.TOP_CENTER,
-          autoClose: 2500,
-        })
-      }else{
-        toast.success('Mensaje enviado correctamente', {
-          position: toast.POSITION.TOP_CENTER,
-          autoClose: 2500,
-        })
-        emailjs
+    if (!validateEmail(input.user_email)) {
+      err.user_email = "Debe ingresar un correo valido";
+    }
+    return err;
+  };
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInput((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    setErr(
+      validate({
+        ...input,
+        [name]: value,
+      })
+    );
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (Object.values(err).length > 0 || Object.values(input).length === 0) {
+      toast.error("Revisa los datos ingresados", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 2500,
+      });
+    } else {
+      toast.success("Mensaje enviado correctamente", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 2500,
+      });
+      emailjs
         .sendForm(
           process.env.REACT_APP_EMAILJS_SERVICE_ID,
           process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
@@ -84,19 +83,18 @@ export default function Contact () {
         )
         .then(
           (result) => {
-            console.log(result.text)
+            console.log(result.text);
           },
           (error) => {
-            console.log(error.text)
+            console.log(error.text);
           }
-        )
-        setInput(initialState)
-      }
+        );
+      setInput(initialState);
     }
+  };
 
-
-    return (
-      <section id='Contact' className="py-8">
+  return (
+    <section id="Contact" className="py-8">
       <div className="text-center">
         <h1 className="text-gray-500/75 pt-8 text-center text-2xl uppercase font-bold underline underline-offset-[15px]">
           Contáctame
@@ -105,10 +103,20 @@ export default function Contact () {
       <div className="w-full mx-auto px-4 md:px-24 max-w-6xl">
         <div className="py-8">
           <p className="text-black text-md text-center md:pb-4 mx-auto">
-          Actualmente, estoy en búsqueda de nuevas oportunidades en el desarrollo web y móvil. Estoy abierto a colaborar en proyectos innovadores y a conectar con personas y empresas que busquen talento en este campo. <br /><br />Si tienes una vacante que se ajuste a mi perfil o te interesa trabajar juntos, no dudes en contactarme. ¡Estoy listo para asumir nuevos retos y aportar mis habilidades al crecimiento de tu equipo o proyecto!
+            Estoy en búsqueda de nuevas oportunidades en el desarrollo web y
+            móvil. Me apasiona crear interfaces intuitivas y eficientes, y estoy
+            listo para aportar mis habilidades a proyectos innovadores. <br />
+            <br />
+            Si tienes una vacante que se ajuste a mi perfil o estás interesado
+            en colaborar, no dudes en contactarme. ¡Será un placer conectar y
+            explorar cómo podemos trabajar juntos!
           </p>
         </div>
-        <form className="flex flex-col items-center mx-auto text-center" ref={form} onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col items-center mx-auto text-center"
+          ref={form}
+          onSubmit={handleSubmit}
+        >
           <div className="flex flex-col w-full md:w-[40rem] mb-4">
             <input
               placeholder="Nombre*"
@@ -169,5 +177,5 @@ export default function Contact () {
         </form>
       </div>
     </section>
-    )
+  );
 }
