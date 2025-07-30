@@ -6,19 +6,38 @@ import { SiGmail } from "react-icons/si";
 
 export default function Header() {
   return (
-    <section id="Home" className="bg-setup bg-cover h-screen">
-      <Navbar />
-      <div className="flex flex-col justify-center items-center py-24 md:py-32 h-screen">
+    <section
+      id="Home"
+      className="relative bg-setup bg-cover bg-center bg-fixed h-screen"
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-0" />
+      <div className="relative z-10 flex flex-col justify-center items-center py-24 md:py-32 h-screen">
+        <Navbar />
         <div className="w-40 h-40">
           <img src={profile} alt="perfil" />
         </div>
         <div className="py-4 text-center">
-          <h2 className="text-gray-200 text-2xl">DANIEL CASTILLO</h2>
-          <h2 className="text-gray-200">DESARROLLADOR FRONTEND</h2>
+          <h2 className="text-gray-200 text-2xl font-semibold">
+            Daniel Castillo
+          </h2>
+
+          <h3 className="text-gray-400 text-base italic mt-1">
+            Desarrollo web y móvil con React y React Native
+          </h3>
+
+          <h2 className="text-gray-200 text-xl mt-2">Desarrollador Frontend</h2>
+
+          <p className="text-gray-300 text-center max-w-md mt-4">
+            Soy desarrollador frontend con más de dos años de experiencia
+            creando interfaces modernas y optimizadas para web y dispositivos
+            móviles. Trabajo con React, React Native, TypeScript y otras
+            tecnologías que me permiten construir soluciones funcionales,
+            accesibles y adaptadas a diferentes necesidades.
+          </p>
         </div>
         <div className="flex flex-row py-4 space-x-4">
-          <Button path="/#AboutMe" text="Sobre Mí" />
-          <Button path="/#Projects" text="Proyectos" />
+          <Button path="AboutMe" text="Sobre Mí" />
+          <Button path="Projects" text="Proyectos" />
         </div>
         <ul className="flex flex-row py-4 gap-4 md:gap-6">
           <li>
