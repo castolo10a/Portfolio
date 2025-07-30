@@ -1,8 +1,8 @@
 import profile from "../../assets/images/ProfilePic.webp";
 import Navbar from "../Navbar/Navbar";
-import Button from "../Buttons/Button/Button";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import ButtonUniversal from "../ButtonUniversal/ButtonUniversal";
 
 export default function Header() {
   return (
@@ -36,8 +36,18 @@ export default function Header() {
           </p>
         </div>
         <div className="flex flex-row py-4 space-x-4">
-          <Button path="AboutMe" text="Sobre Mí" />
-          <Button path="Projects" text="Proyectos" />
+          <ButtonUniversal
+            path="AboutMe"
+            text="Sobre Mí"
+            className="bg-transparent"
+            isScroll
+          />
+          <ButtonUniversal
+            path="Projects"
+            text="Proyectos"
+            className="bg-transparent"
+            isScroll
+          />
         </div>
         <ul className="flex flex-row py-4 gap-4 md:gap-6">
           <li>

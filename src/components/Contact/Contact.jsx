@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
-import ButtonSubmit from "../Buttons/ButtonSubmit/ButtonSubmit";
+import { FaTelegramPlane } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ButtonUniversal from "../ButtonUniversal/ButtonUniversal";
 
 const initialState = {
   user_name: "",
@@ -172,7 +173,11 @@ export default function Contact() {
             </span>
           </div>
           <div className="py-8">
-            <ButtonSubmit />
+            <ButtonUniversal
+              text="ENVIAR"
+              icon={<FaTelegramPlane size={20} />}
+              disabled
+            />
           </div>
         </form>
       </div>

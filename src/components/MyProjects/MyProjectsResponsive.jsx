@@ -1,20 +1,20 @@
-import { ICONS_BY_TECH } from "../../constants/iconsByTech"
-import { IMAGE_BY_PROJECT } from "../../constants/imageByProjects"
-import ButtonGithub from "../Buttons/ButtonGitHub/ButtonGitHub"
-import ButtonDemo from "../Buttons/ButtonDemo/ButtonDemo"
+import { ICONS_BY_TECH } from "../../constants/iconsByTech";
+import { IMAGE_BY_PROJECT } from "../../constants/imageByProjects";
+import { SiGithub } from "react-icons/si";
+import ButtonUniversal from "../ButtonUniversal/ButtonUniversal";
 
-function ProyectoResponsive ({
+function ProyectoResponsive({
   title,
   content,
   urlProject,
   titleTech,
   contentTech,
   image,
-  urlGithub
+  urlGithub,
 }) {
   const imagenByProject = IMAGE_BY_PROJECT.find(
     (project) => project.name === image.alt
-  )
+  );
   return (
     <div className="flex flex-col max-w-full md:hidden border border-solid border-gray-500/75 rounded-xl px-2">
       <div className="flex flex-col items-center px-2 py-2">
@@ -40,10 +40,10 @@ function ProyectoResponsive ({
           <div className="flex flex-wrap justify-center text-sm py-2 px-4">
             {contentTech.length
               ? contentTech.map((content) => {
-                const iconByTech = ICONS_BY_TECH.find(
-                  (title) => title.name === content.title
-                )
-                return (
+                  const iconByTech = ICONS_BY_TECH.find(
+                    (title) => title.name === content.title
+                  );
+                  return (
                     <div
                       key={content.title}
                       className="flex items-center pr-2  transition-colors text-gray-200 hover:text-gray-500/75"
@@ -51,29 +51,33 @@ function ProyectoResponsive ({
                       {iconByTech?.icon}
                       <a
                         href={content.href}
-                        target={'_blank'}
+                        target={"_blank"}
                         rel="noreferrer"
                         className="px-1"
                       >
                         {content.title}
                       </a>
                     </div>
-                )
-              })
+                  );
+                })
               : null}
           </div>
         </div>
         <div className="py-2 px-4">
-          <ButtonDemo
+          <ButtonUniversal
             path={urlProject}
+            text="Visita el sitio →"
+            isExternal
           />
-          <ButtonGithub
+          <ButtonUniversal
             path={urlGithub}
+            icon={<SiGithub size={25} />}
+            isExternal
           />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProyectoResponsive
+export default ProyectoResponsive;
