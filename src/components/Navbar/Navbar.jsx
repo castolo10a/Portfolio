@@ -1,64 +1,125 @@
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Options from "./Options";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [oculto, setOculto] = useState(true);
   const [scrolling, setScrolling] = useState(false);
 
-  const action = () => {
-    setOculto(!oculto);
+  const fileUrl = process.env.PUBLIC_URL + "/CV - Daniel Castillo.pdf";
+
+  const handleScroll = () => {
+    setScrolling(window.scrollY > 0);
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMenu = () => setOculto(!oculto);
+
+  const navLinks = [
+    { href: "Home", label: "Inicio" },
+    { href: "AboutMe", label: "Sobre Mí" },
+    { href: "Projects", label: "Proyectos" },
+    { href: "Contact", label: "Contacto" },
+    { href: fileUrl, label: "CV", external: true },
+  ];
+
   return (
-    <header className={`${
-      scrolling ? "bg-black bg-opacity-80" : "bg-transparent"
-    } transition duration-300 ease-in-out fixed top-0 left-0 w-full`}>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition duration-300 ${
+        scrolling ? "bg-black/80 shadow-md backdrop-blur-sm" : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex-1 md:flex md:items-center md:justify-between md:gap-12">
-            <a className="text-teal-600" href="#Home">
-              <span className="text-gray-200 uppercase">CastilloCoder</span>
-            </a>
-            {/* Mostrar las opciones en dispositivos 'md' y mayores */}
-            <div className="hidden md:flex space-x-4 text-gray-200">
-              <Options />
-            </div>
-          </div>
+          {/* Logo / Marca */}
+          <Link
+            to="Home"
+            smooth={true}
+            duration={500}
+            offset={-64}
+            onClick={!oculto && toggleMenu}
+            className="text-gray-200 text-lg font-semibold uppercase cursor-pointer"
+          >
+            CastilloCoder
+          </Link>
 
-          <div className="block md:hidden">
-            <button onClick={action} className="rounded text-gray-200">
-              {oculto ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
-            </button>
-            {/* Mostrar las opciones en dispositivos menores que 'md' */}
-            <div
-              className={`${
-                oculto
-                  ? "hidden"
-                  : "mt-4 absolute right-0 z-[1] min-w-full font-sans font-bold text-lg"
-              }`}
-            >
-              <Options action={action} scrolling={scrolling}/>
-            </div>
-          </div>
+          {/* Botón menú hamburguesa (solo visible en mobile) */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-gray-200 hover:text-gray-400"
+            aria-label="Abrir menú"
+          >
+            {oculto ? (
+              <AiOutlineMenu size={25} />
+            ) : (
+              <AiOutlineClose size={25} />
+            )}
+          </button>
+
+          {/* Navegación desktop */}
+          <nav className="hidden md:flex items-center space-x-6 text-sm">
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  smooth={true}
+                  duration={500}
+                  offset={-64}
+                  className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+          </nav>
         </div>
       </div>
+
+      {/* Navegación móvil */}
+      {!oculto && (
+        <div className="md:hidden bg-black/90 py-4 flex flex-col items-start px-6 space-y-4 transition-all duration-300">
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.label}
+                to={link.href}
+                smooth={true}
+                duration={500}
+                offset={-64}
+                onClick={!oculto && toggleMenu}
+                className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
+        </div>
+      )}
     </header>
   );
 }
