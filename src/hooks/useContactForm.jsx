@@ -19,7 +19,7 @@ export const useContactForm = () => {
         {
           user_name: data.name,
           user_email: data.email,
-          user_message: data.message,
+          message: data.message,
         },
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       ),
