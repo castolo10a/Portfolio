@@ -22,17 +22,14 @@ export default function Header() {
           </h2>
 
           <h3 className="text-gray-400 text-base italic mt-1">
-            Desarrollo web y móvil con React y React Native
+            Desarrollador Frontend | React & React Native
           </h3>
 
-          <h2 className="text-gray-200 text-xl mt-2">Desarrollador Frontend</h2>
-
           <p className="text-gray-300 text-center max-w-md mt-4">
-            Soy desarrollador frontend con más de dos años de experiencia
-            creando interfaces modernas y optimizadas para web y dispositivos
-            móviles. Trabajo con React, React Native, TypeScript y otras
-            tecnologías que me permiten construir soluciones funcionales,
-            accesibles y adaptadas a diferentes necesidades.
+            Especializado en crear experiencias digitales modernas, responsivas
+            y funcionales. Desarrollo interfaces con tecnologías como React,
+            TypeScript y TailwindCSS, priorizando el rendimiento y la
+            experiencia del usuario.
           </p>
         </div>
         <div className="flex flex-row py-4 space-x-4">

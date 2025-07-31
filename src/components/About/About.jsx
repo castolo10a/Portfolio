@@ -33,25 +33,22 @@ export default function About() {
 
         <p className="mt-4 text-black text-center md:text-center space-y-4">
           <span className="block">
-            Soy desarrollador frontend con más de dos años de experiencia
-            creando aplicaciones web y móviles. Me especializo en construir
-            interfaces modernas, rápidas y responsivas utilizando tecnologías
-            como React, React Native, TypeScript y Tailwind CSS.
+            Soy un desarrollador frontend con enfoque en React y React Native,
+            con mas de dos años de experiencia construyendo productos digitales eficientes y
+            centrados en el usuario.
           </span>
 
           <span className="block">
-            He trabajado en proyectos freelance y colaborativos para distintos
-            tipos de clientes, enfocándome siempre en escribir código limpio,
-            reutilizable y orientado a una excelente experiencia de usuario.
-            Domino la integración de APIs, el consumo de servicios externos y la
-            adaptación de diseños UI/UX a distintos dispositivos.
+            He trabajado en proyectos freelance y en equipos colaborativos,
+            desarrollando desde landing pages hasta aplicaciones móviles,
+            siempre aplicando buenas prácticas de código, accesibilidad y diseño
+            responsivo.
           </span>
 
           <span className="block">
-            Me gusta mantenerme actualizado con las últimas tendencias del
-            desarrollo frontend, trabajar en equipo bajo metodologías ágiles y
-            asumir nuevos retos que me permitan seguir creciendo
-            profesionalmente.
+            Me motiva aprender constantemente, mantenerme actualizado con el
+            ecosistema frontend y aportar en proyectos donde la calidad técnica
+            y la experiencia de usuario sean prioridad.
           </span>
         </p>
 
