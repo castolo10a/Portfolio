@@ -1,13 +1,12 @@
 import Landing from "./views/Landing";
 import Footer from "./components/Footer/Footer";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <div>
       <Landing />
-      <ToastContainer />
+      <Toaster position="bottom-right" reverseOrder={false} />
       <Footer />
     </div>
   );
