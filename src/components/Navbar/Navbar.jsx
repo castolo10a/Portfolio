@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Botón menú hamburguesa (solo visible en mobile) */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-gray-200 hover:text-gray-400"
+            className="md:hidden text-gray-200 hover:text-teal-600"
             aria-label="Abrir menú"
           >
             {oculto ? (
@@ -69,7 +69,7 @@ export default function Navbar() {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+                  className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
                 >
                   {link.label}
                 </a>
@@ -80,7 +80,7 @@ export default function Navbar() {
                   smooth={true}
                   duration={500}
                   offset={-64}
-                  className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+                  className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
                 >
                   {link.label}
                 </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+                className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
               >
                 {link.label}
               </a>
@@ -112,7 +112,7 @@ export default function Navbar() {
                 duration={500}
                 offset={-64}
                 onClick={!oculto && toggleMenu}
-                className="text-gray-200 hover:text-gray-400 uppercase cursor-pointer transition"
+                className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
               >
                 {link.label}
               </Link>

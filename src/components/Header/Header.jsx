@@ -55,7 +55,7 @@ export default function Header() {
               href="https://www.linkedin.com/in/danielcastillo97/"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-200 transition hover:text-gray-500/75"
+              className="text-gray-200 transition hover:text-teal-600"
             >
               <FaLinkedin size={23} />
             </a>
@@ -66,7 +66,7 @@ export default function Header() {
               href="https://github.com/castolo10a"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-200 transition hover:text-gray-500/75"
+              className="text-gray-200 transition hover:text-teal-600"
             >
               <FaGithub size={23} />
             </a>
@@ -77,7 +77,7 @@ export default function Header() {
               href="http://wa.me/573116984474#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-200 transition hover:text-gray-500/75"
+              className="text-gray-200 transition hover:text-teal-600"
             >
               <FaWhatsapp size={23} />
             </a>
@@ -87,7 +87,7 @@ export default function Header() {
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=castillod159@gmail.com"
               target="_blank"
-              className="text-gray-200 transition hover:text-gray-500/75"
+              className="text-gray-200 transition hover:text-teal-600"
               rel="noreferrer"
             >
               <SiGmail size={23} />

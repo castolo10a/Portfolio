@@ -11,7 +11,7 @@ const ButtonUniversal = ({
   disabled = false,
 }) => {
   const baseClasses =
-    "flex flex-row items-center justify-center px-3 py-1 text-base text-gray-200 border border-solid rounded-xl transition-colors hover:bg-gray-500/75 md:w-auto md:mb-0";
+    "flex flex-row items-center justify-center px-3 py-1 text-base text-gray-200 border border-solid rounded-xl transition-colors hover:bg-teal-600 md:w-auto md:mb-0";
 
   if (isScroll) {
     return (

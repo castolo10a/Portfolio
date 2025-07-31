@@ -25,7 +25,7 @@ export default function About() {
   const fileUrl = process.env.PUBLIC_URL + "/CV - Daniel Castillo.pdf";
 
   return (
-    <section id="AboutMe" className="py-16 px-4 bg-white text-black">
+    <section id="AboutMe" className="py-8 px-4 bg-white text-black">
       <div className="mx-auto w-full max-w-3xl text-center">
         <h2 className="text-gray-700 text-3xl font-bold uppercase underline underline-offset-[12px] mb-8">
           Sobre Mí
@@ -82,14 +82,14 @@ export default function About() {
           <ButtonUniversal
             path="Contact"
             text="Contacto"
-            className="flex flex-row items-center px-3 py-1 text-base text-gray-200 bg-gray-500/75 border border-solid rounded-xl transition-colors hover:bg-black hover:bg-opacity-20 hover:text-black md:w-auto md:mb-0"
+            className="flex flex-row items-center px-3 py-1 text-base text-gray-200 bg-gray-500/75 border border-solid rounded-xl transition-colors hover:bg-teal-600 md:w-auto md:mb-0"
             isScroll
           />
           <ButtonUniversal
             path={fileUrl}
             text="CV"
             icon={<FaRegFilePdf size={17} />}
-            className="flex flex-row items-center px-3 py-1 text-base text-gray-200 bg-gray-500/75 border border-solid rounded-xl transition-colors hover:bg-black hover:bg-opacity-20 hover:text-black md:w-auto md:mb-0"
+            className="flex flex-row items-center px-3 py-1 text-base text-gray-200 bg-gray-500/75 border border-solid rounded-xl transition-colors hover:bg-teal-600 md:w-auto md:mb-0"
             isDownload
           />
         </div>
