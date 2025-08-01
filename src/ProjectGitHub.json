@@ -1,150 +1,104 @@
 [
   {
+    "titleProject": "JC Construcciones",
+    "content": "Landing profesional desarrollada con Next.js para una empresa de construcción. Incluye secciones informativas, formulario de contacto con EmailJS y notificaciones con react-hot-toast.",
+    "urlProject": "https://jc-construcciones.netlify.app/",
+    "urlGithub": "https://github.com/castolo10a/landing-jc-construcciones",
+    "badge": "Freelance",
+    "titleTecnologies": "Tecnologías",
+    "image": { "alt": "JC Construcciones" },
+    "contentTecnologies": [
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "NextJs", "href": "https://nextjs.org/" },
+      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
+    ]
+  },
+  {
+    "titleProject": "Londoño Ingeniería",
+    "content": "Landing corporativa creada con Next.js y estilizada con TailwindCSS. Incluye secciones como Inicio, Servicios, Acerca de, y un footer informativo.",
+    "urlProject": "https://londonoingenieria.com",
+    "urlGithub": "https://github.com/castolo10a/londono-ingenieria",
+    "badge": "Freelance",
+    "titleTecnologies": "Tecnologías",
+    "image": { "alt": "Londoño Ingenieria" },
+    "contentTecnologies": [
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "NextJs", "href": "https://nextjs.org/" },
+      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
+    ]
+  },
+  {
     "titleProject": "Products Page",
-    "content": "Desarrollo de una SPA con React y estilizada con TailwindCSS, diseñada para mostrar un listado de productos de manera dinámica y eficiente. La aplicación permite a los usuarios filtrar productos según diversas categorías, rangos de precio y disponibilidad en stock, ofreciendo una experiencia de navegación intuitiva y personalizada.",
+    "content": "Aplicación SPA desarrollada con React y TailwindCSS para mostrar productos con filtros por categoría, precio y disponibilidad. Interfaz moderna y navegación fluida.",
     "urlProject": "https://listproductsfilters.netlify.app/",
     "urlGithub": "https://github.com/castolo10a/products-card-filter",
+    "badge": "Prueba Técnica",
     "titleTecnologies": "Tecnologías",
-    "image": {
-      "alt": "Products Page"
-    },
+    "image": { "alt": "Products Page" },
     "contentTecnologies": [
-      {
-        "title": "React",
-        "href": "http://es.reactjs.org"
-      },
-      {
-        "title": "NodeJs",
-        "href": "http://nodejs.org/es/"
-      },
-      {
-        "title": "TailwindCSS",
-        "href": "https://tailwindcss.com/"
-      }
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
     ]
   },
   {
     "titleProject": "Vida Animal",
-    "content": "(Proyecto para terceros) - Desarrollo de una SPA utilizando React y Next.js para el Centro Médico Veterinario 'Vida Animal'. Esta página presenta información detallada sobre el centro, incluye enlaces a redes sociales, un formulario de contacto integrado para consultas directas, y un práctico botón flotante de WhatsApp para una comunicación ágil. Todo el diseño se ha realizado con Tailwind CSS, asegurando una experiencia moderna y completamente responsive. La página incluye secciones clave como 'Inicio', 'Servicios', 'Quiénes Somos' y 'Contacto', además de una barra de navegación y un footer con opciones adicionales para una navegación sencilla y completa por parte de los usuarios.",
+    "content": "Sitio web para un centro médico veterinario, construido con Next.js y React. Incluye secciones informativas, contacto, enlaces sociales y botón flotante de WhatsApp.",
     "urlProject": "https://vida-animal.netlify.app/",
     "urlGithub": "https://github.com/castolo10a/Vida-Animal",
+    "badge": "Freelance",
     "titleTecnologies": "Tecnologías",
-    "image": {
-      "alt": "Vida_animal"
-    },
+    "image": { "alt": "Vida_animal" },
     "contentTecnologies": [
-      {
-        "title": "React",
-        "href": "http://es.reactjs.org"
-      },
-      {
-        "title": "NextJs",
-        "href": "https://nextjs.org/"
-      },
-      {
-        "title": "NodeJs",
-        "href": "http://nodejs.org/es/"
-      },
-      {
-        "title": "TailwindCSS",
-        "href": "https://tailwindcss.com/"
-      }
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "NextJs", "href": "https://nextjs.org/" },
+      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
     ]
   },
   {
     "titleProject": "Kolozo",
-    "content": "(Proyecto para terceros) - Desarrollo de una SPA completa en React para un restaurante, presentando información detallada, enlaces a redes sociales, formulario de contacto, botón flotante de WhatsApp, todo estilizado con Tailwind CSS para una experiencia responsive y moderna.",
+    "content": "Landing moderna para un restaurante tipo gastrobar. SPA construida en React con TailwindCSS. Incluye secciones informativas, redes sociales y contacto rápido.",
     "urlProject": "https://gastrobarkolozo.netlify.app/",
     "urlGithub": "https://github.com/castolo10a/Kolozo-Gastrobar",
+    "badge": "Freelance",
     "titleTecnologies": "Tecnologías",
-    "image": {
-      "alt": "Kolozo"
-    },
+    "image": { "alt": "Kolozo" },
     "contentTecnologies": [
-      {
-        "title": "React",
-        "href": "http://es.reactjs.org"
-      },
-      {
-        "title": "NodeJs",
-        "href": "http://nodejs.org/es/"
-      },
-      {
-        "title": "TailwindCSS",
-        "href": "https://tailwindcss.com/"
-      }
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
     ]
   },
   {
     "titleProject": "Henry Market",
-    "content": "(Experiencia Académica) - Participación en un equipo de desarrollo ágil con sprints de una semana presentándole a un Product Owner avances sobre el desarrollo del E-commerce con diseño y desarrollo de las siguientes features: Features básicas de e-commerce (CRUD de productos, auth, catálogo, checkout, etc.…)",
+    "content": "E-commerce completo desarrollado en equipo durante el bootcamp. CRUD de productos, autenticación, catálogo, checkout y funcionalidades básicas de tienda.",
     "urlProject": "https://henrymarket.netlify.app/",
     "urlGithub": "https://github.com/castolo10a/Henry-Market-Front",
+    "badge": "Académico",
     "titleTecnologies": "Tecnologías",
-    "image": {
-      "alt": "Henry Market"
-    },
+    "image": { "alt": "Henry Market" },
     "contentTecnologies": [
-      {
-        "title": "React",
-        "href": "http://es.reactjs.org"
-      },
-        {
-          "title": "Redux",
-          "href": "http://es.redux.js.org"
-        },
-        {
-          "title": "NodeJs",
-          "href": "http://nodejs.org/es/"
-        },
-        {
-          "title": "Express",
-          "href": "http://expressjs.com/"
-        },
-        {
-          "title": "PostgreSQL",
-          "href": "http://www.postgresql.org/"
-        },
-        {
-          "title": "Sequelize",
-          "href": "http://sequelize.org/"
-        }
-      ]
-    },
-    {
-      "titleProject": "App_Food",
-      "content": "(Experiencia Académica) - Desarrollo de una SPA (Single Page Application) de Recetas que incluía: landing, home con vista a las diferentes recetas, filtrados combinados, búsquedas, ordenamientos, opción de crear nuevas recetas, etc. La SPA consume datos de una base de datos PostgreSQL a través de un Back End desarrollado en NodeJS utilizando Express.",
-      "urlProject": "https://recipesandfoods.netlify.app/",
-      "urlGithub": "https://github.com/castolo10a/AppFood_Front",
-      "titleTecnologies": "Tecnologías",
-      "image": {
-        "alt": "App_Food"
-      },
-      "contentTecnologies": [
-        {
-          "title": "React",
-          "href": "http://es.reactjs.org"
-        },
-        {
-          "title": "Redux",
-          "href": "http://es.redux.js.org"
-        },
-        {
-          "title": "NodeJs",
-          "href": "http://nodejs.org/es/"
-        },
-        {
-          "title": "Express",
-          "href": "http://expressjs.com/"
-        },
-        {
-          "title": "PostgreSQL",
-          "href": "http://www.postgresql.org/"
-        },
-        {
-          "title": "Sequelize",
-          "href": "http://sequelize.org/"
-        }
-      ]
-    }
-  ]
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "Redux", "href": "http://es.redux.js.org" },
+      { "title": "NodeJs", "href": "http://nodejs.org/es/" },
+      { "title": "Express", "href": "http://expressjs.com/" },
+      { "title": "PostgreSQL", "href": "http://www.postgresql.org/" },
+      { "title": "Sequelize", "href": "http://sequelize.org/" }
+    ]
+  },
+  {
+    "titleProject": "App_Food",
+    "content": "SPA de recetas que permite búsquedas, filtrados, ordenamientos y creación de nuevas recetas. Frontend en React y Backend en Node.js + PostgreSQL.",
+    "urlProject": "https://recipesandfoods.netlify.app/",
+    "urlGithub": "https://github.com/castolo10a/AppFood_Front",
+    "badge": "Académico",
+    "titleTecnologies": "Tecnologías",
+    "image": { "alt": "App_Food" },
+    "contentTecnologies": [
+      { "title": "React", "href": "http://es.reactjs.org" },
+      { "title": "Redux", "href": "http://es.redux.js.org" },
+      { "title": "NodeJs", "href": "http://nodejs.org/es/" },
+      { "title": "Express", "href": "http://expressjs.com/" },
+      { "title": "PostgreSQL", "href": "http://www.postgresql.org/" },
+      { "title": "Sequelize", "href": "http://sequelize.org/" }
+    ]
+  }
+]
