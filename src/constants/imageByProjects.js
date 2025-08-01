@@ -3,6 +3,8 @@ import AppFoodPic from "../assets/images/AppFoodPic.webp";
 import KolozoPic from "../assets/images/KolozoPic.webp";
 import vidaAnimal from '../assets/images/vidaAnimalPic.webp'
 import ProductPage from '../assets/images/ProductListPic.webp'
+import LondoñoIngenieria from '../assets/images/londonoIngenieriaPic.webp'
+import JcConstrucciones from '../assets/images/JCConstruccionesPic.webp'
 
 export const IMAGE_BY_PROJECT = [
   {
@@ -24,5 +26,13 @@ export const IMAGE_BY_PROJECT = [
   {
     name: 'Products Page',
     src: ProductPage
+  },
+  {
+    name: 'Londoño Ingenieria',
+    src: LondoñoIngenieria
+  },
+  {
+    name: 'JC Construcciones',
+    src: JcConstrucciones
   }
 ]
