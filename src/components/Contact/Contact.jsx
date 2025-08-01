@@ -8,21 +8,21 @@ export default function Contact() {
   const [accepted, setAccepted] = useState(false);
 
   return (
-    <section id="Contact" className="py-8 bg-white">
+    <section id="Contact" className="py-8 px-4 bg-colorSection text-gray-200">
       <div className="text-center mb-10">
-        <h1 className="text-gray-700 text-3xl font-bold uppercase underline underline-offset-[10px]">
+        <h1 className="text-center text-3xl font-bold text-gray-200 underline underline-offset-8 mb-10">
           Contáctame
         </h1>
       </div>
 
-      <div className="w-full max-w-3xl mx-auto px-4">
-        <p className="text-gray-700 text-md text-center mb-10 leading-relaxed">
+      <div className="w-full max-w-3xl mx-auto">
+        <p className="text-center mb-10 leading-relaxed text-gray-300">
           Estoy en búsqueda de nuevas oportunidades como desarrollador web y
           móvil. Me apasiona crear interfaces intuitivas y adaptadas a
           diferentes dispositivos.
         </p>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           {/* Nombre */}
           <div>
             <input
@@ -35,9 +35,9 @@ export default function Contact() {
                   message: "Nombre inválido",
                 },
               })}
-              className="w-full p-3 rounded border border-gray-300 focus:ring-2 focus:ring-teal-600 outline-none"
+              className="w-full p-3 rounded bg-transparent border border-gray-600 placeholder-gray-400 focus:ring-2 focus:ring-teal-500 outline-none"
             />
-            <p className="text-sm text-red-600 italic">
+            <p className="text-sm text-red-500 italic mt-1">
               {errors.name?.message}
             </p>
           </div>
@@ -54,9 +54,9 @@ export default function Contact() {
                   message: "Correo no válido",
                 },
               })}
-              className="w-full p-3 rounded border border-gray-300 focus:ring-2 focus:ring-teal-600 outline-none"
+              className="w-full p-3 rounded bg-transparent border border-gray-600 placeholder-gray-400 focus:ring-2 focus:ring-teal-500 outline-none"
             />
-            <p className="text-sm text-red-600 italic">
+            <p className="text-sm text-red-500 italic mt-1">
               {errors.email?.message}
             </p>
           </div>
@@ -69,14 +69,14 @@ export default function Contact() {
                 required: "Mensaje obligatorio",
               })}
               rows={5}
-              className="w-full p-3 rounded border border-gray-300 focus:ring-2 focus:ring-teal-600 outline-none resize-none"
+              className="w-full p-3 rounded bg-transparent border border-gray-600 placeholder-gray-400 focus:ring-2 focus:ring-teal-500 outline-none resize-none"
             />
-            <p className="text-sm text-red-600 italic">
+            <p className="text-sm text-red-500 italic mt-1">
               {errors.message?.message}
             </p>
           </div>
 
-          {/* Check de privacidad */}
+          {/* Check privacidad */}
           <div className="flex items-start gap-2 text-sm">
             <input
               type="checkbox"
@@ -84,33 +84,35 @@ export default function Contact() {
                 required: "Debes aceptar los términos",
                 onChange: (e) => {
                   setAccepted(e.target.checked);
-                  trigger();
+                  trigger(); // asegura que se revalide al cambiar el checkbox
                 },
               })}
-              className="mt-1 text-teal-600 focus:ring-teal-500 accent-teal-600"
+              className="mt-1 accent-teal-600 focus:ring-teal-500"
             />
-            <label className="text-gray-700 italic">
+            <label className="text-gray-300 italic">
               Acepto el tratamiento de mis datos personales conforme a la Ley
               1581 de 2012
             </label>
           </div>
-          <p className="text-sm text-red-600 italic">
+          <p className="text-sm text-red-500 italic">
             {errors.privacy?.message}
           </p>
 
           {/* Botón */}
-          <button
-            type="submit"
-            disabled={!isValid || !accepted}
-            className={`flex items-center gap-2 justify-center w-full md:w-auto px-6 py-2 text-white font-semibold rounded transition-all ${
-              isValid && accepted
-                ? "bg-teal-600 hover:bg-teal-700"
-                : "bg-gray-300 cursor-not-allowed text-gray-500"
-            }`}
-          >
-            <FaTelegramPlane />
-            Enviar
-          </button>
+          <div className="pt-2 text-center">
+            <button
+              type="submit"
+              disabled={!isValid || !accepted}
+              className={`flex items-center gap-2 justify-center w-full md:w-auto px-6 py-2 font-semibold rounded transition-all ${
+                isValid && accepted
+                  ? "bg-teal-600 hover:bg-teal-700 text-white"
+                  : "bg-gray-600 text-gray-400 cursor-not-allowed"
+              }`}
+            >
+              <FaTelegramPlane />
+              Enviar
+            </button>
+          </div>
         </form>
       </div>
     </section>

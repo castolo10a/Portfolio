@@ -27,11 +27,11 @@ export default function About() {
   return (
     <section id="AboutMe" className="py-8 px-4 bg-white text-black">
       <div className="mx-auto w-full max-w-3xl text-center">
-        <h2 className="text-gray-700 text-3xl font-bold uppercase underline underline-offset-[12px] mb-8">
+        <h2 className="text-gray-700 text-3xl font-bold underline underline-offset-8 mb-8">
           Sobre Mí
         </h2>
 
-        <p className="mt-4 text-black text-center md:text-center space-y-4">
+        <p className="mt-4 text-gray-700 text-center md:text-center space-y-4">
           <span className="block">
             Soy un desarrollador frontend con enfoque en React y React Native,
             con mas de dos años de experiencia construyendo productos digitales eficientes y
