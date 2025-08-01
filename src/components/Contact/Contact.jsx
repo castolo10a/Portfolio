@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section id="Contact" className="py-8 px-4 bg-colorSection text-gray-200">
       <div className="text-center mb-10">
-        <h1 className="text-center text-3xl font-bold text-gray-200 underline underline-offset-8 mb-10">
+        <h1 className="text-3xl font-bold underline underline-offset-8 mb-10">
           Contáctame
         </h1>
       </div>
@@ -22,9 +22,9 @@ export default function Contact() {
           diferentes dispositivos.
         </p>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
           {/* Nombre */}
-          <div>
+          <div className="space-y-1">
             <input
               type="text"
               placeholder="Nombre completo"
@@ -37,13 +37,17 @@ export default function Contact() {
               })}
               className="w-full p-3 rounded bg-transparent border border-gray-600 placeholder-gray-400 focus:ring-2 focus:ring-teal-500 outline-none"
             />
-            <p className="text-sm text-red-500 italic mt-1">
-              {errors.name?.message}
-            </p>
+            <div className="min-h-[20px]">
+              {errors.name && (
+                <p className="text-sm text-red-500 italic">
+                  {errors.name.message}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Correo */}
-          <div>
+          <div className="space-y-1">
             <input
               type="email"
               placeholder="Correo electrónico"
@@ -56,13 +60,17 @@ export default function Contact() {
               })}
               className="w-full p-3 rounded bg-transparent border border-gray-600 placeholder-gray-400 focus:ring-2 focus:ring-teal-500 outline-none"
             />
-            <p className="text-sm text-red-500 italic mt-1">
-              {errors.email?.message}
-            </p>
+            <div className="min-h-[20px]">
+              {errors.email && (
+                <p className="text-sm text-red-500 italic">
+                  {errors.email.message}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Mensaje */}
-          <div>
+          <div className="space-y-1">
             <textarea
               placeholder="Cuéntame tu proyecto..."
               {...register("message", {
@@ -71,35 +79,45 @@ export default function Contact() {
               rows={5}
               className="w-full p-3 rounded bg-transparent border border-gray-600 placeholder-gray-400 focus:ring-2 focus:ring-teal-500 outline-none resize-none"
             />
-            <p className="text-sm text-red-500 italic mt-1">
-              {errors.message?.message}
-            </p>
+            <div className="min-h-[20px]">
+              {errors.message && (
+                <p className="text-sm text-red-500 italic">
+                  {errors.message.message}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Check privacidad */}
-          <div className="flex items-start gap-2 text-sm">
-            <input
-              type="checkbox"
-              {...register("privacy", {
-                required: "Debes aceptar los términos",
-                onChange: (e) => {
-                  setAccepted(e.target.checked);
-                  trigger(); // asegura que se revalide al cambiar el checkbox
-                },
-              })}
-              className="mt-1 accent-teal-600 focus:ring-teal-500"
-            />
-            <label className="text-gray-300 italic">
-              Acepto el tratamiento de mis datos personales conforme a la Ley
-              1581 de 2012
-            </label>
+          <div className="space-y-1">
+            <div className="flex items-start gap-2 text-sm">
+              <input
+                type="checkbox"
+                {...register("privacy", {
+                  required: "Debes aceptar los términos",
+                  onChange: (e) => {
+                    setAccepted(e.target.checked);
+                    trigger();
+                  },
+                })}
+                className="mt-1 accent-teal-600 focus:ring-teal-500"
+              />
+              <label className="text-gray-300 italic">
+                Acepto el tratamiento de mis datos personales conforme a la Ley
+                1581 de 2012
+              </label>
+            </div>
+            <div className="min-h-[20px]">
+              {errors.privacy && (
+                <p className="text-sm text-red-500 italic">
+                  {errors.privacy.message}
+                </p>
+              )}
+            </div>
           </div>
-          <p className="text-sm text-red-500 italic">
-            {errors.privacy?.message}
-          </p>
 
           {/* Botón */}
-          <div className="pt-2 text-center">
+          <div className="pt-4 text-center">
             <button
               type="submit"
               disabled={!isValid || !accepted}
