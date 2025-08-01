@@ -23,6 +23,7 @@ export default function Navbar() {
     { href: "Home", label: "Inicio" },
     { href: "AboutMe", label: "Sobre Mí" },
     { href: "Projects", label: "Proyectos" },
+    { href: "InfoServices", label: "Servicios" },
     { href: "Contact", label: "Contacto" },
     { href: fileUrl, label: "CV", external: true },
   ];

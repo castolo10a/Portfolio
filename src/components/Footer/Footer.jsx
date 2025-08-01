@@ -60,6 +60,17 @@ export default function Footer() {
                 Proyectos
               </Link>
             </li>
+             <li>
+              <Link
+                className="transition hover:text-teal-600 cursor-pointer"
+                to="InfoServices"
+                smooth={true}
+                duration={500}
+                offset={-64}
+              >
+                Servicios
+              </Link>
+            </li>
             <li>
               <Link
                 className="transition hover:text-teal-600 cursor-pointer"
