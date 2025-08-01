@@ -66,39 +66,5 @@
       { "title": "React", "href": "http://es.reactjs.org" },
       { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
     ]
-  },
-  {
-    "titleProject": "Henry Market",
-    "content": "E-commerce completo desarrollado en equipo durante el bootcamp. CRUD de productos, autenticación, catálogo, checkout y funcionalidades básicas de tienda.",
-    "urlProject": "https://henrymarket.netlify.app/",
-    "urlGithub": "https://github.com/castolo10a/Henry-Market-Front",
-    "badge": "Académico",
-    "titleTecnologies": "Tecnologías",
-    "image": { "alt": "Henry Market" },
-    "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "Redux", "href": "http://es.redux.js.org" },
-      { "title": "NodeJs", "href": "http://nodejs.org/es/" },
-      { "title": "Express", "href": "http://expressjs.com/" },
-      { "title": "PostgreSQL", "href": "http://www.postgresql.org/" },
-      { "title": "Sequelize", "href": "http://sequelize.org/" }
-    ]
-  },
-  {
-    "titleProject": "App_Food",
-    "content": "SPA de recetas que permite búsquedas, filtrados, ordenamientos y creación de nuevas recetas. Frontend en React y Backend en Node.js + PostgreSQL.",
-    "urlProject": "https://recipesandfoods.netlify.app/",
-    "urlGithub": "https://github.com/castolo10a/AppFood_Front",
-    "badge": "Académico",
-    "titleTecnologies": "Tecnologías",
-    "image": { "alt": "App_Food" },
-    "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "Redux", "href": "http://es.redux.js.org" },
-      { "title": "NodeJs", "href": "http://nodejs.org/es/" },
-      { "title": "Express", "href": "http://expressjs.com/" },
-      { "title": "PostgreSQL", "href": "http://www.postgresql.org/" },
-      { "title": "Sequelize", "href": "http://sequelize.org/" }
-    ]
   }
 ]
