@@ -1,11 +1,25 @@
-# Portfolio
+# Daniel Castillo — Media Buyer
 
-## Este portfolio fue realizado con: 
+Portafolio personal de una sola página: Administrador de Empresas y Media Buyer en Arriba Agencia, especializado en Meta Ads para e-commerce.
 
-🔥React
+**Secciones:** Inicio · Sobre mí · Experiencia · Servicios · Proyectos web · Contacto
 
-🔥Tailwind
+## Stack
 
-🔥EmailJS para mensajería
+- React + TailwindCSS
+- EmailJS para el formulario de contacto
+- react-scroll para la navegación entre secciones
 
-👨🏽‍💻 visita el sitio web https://castillocoder.netlify.app/ 🌐
+## Editar el contenido
+
+Todos los textos (hero, sobre mí, experiencia, servicios, herramientas y datos de contacto) están en `src/constants/content.js`.
+Los proyectos web están en `src/ProjectGitHub.json`.
+
+## Desarrollo
+
+```bash
+npm install
+npm start
+```
+
+🌐 https://castillocoder.netlify.app/

@@ -4,11 +4,11 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div>
+    <>
       <Landing />
-      <Toaster position="bottom-right" reverseOrder={false} />
       <Footer />
-    </div>
+      <Toaster position="bottom-right" />
+    </>
   );
 }
 

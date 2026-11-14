@@ -1,17 +1,23 @@
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
-import Contact from "../components/Contact/Contact";
-import Header from "../components/Header/Header";
+import Services from "../components/Services/Services";
+import Experience from "../components/Experience/Experience";
 import Projects from "../components/Projects/Projects";
-import InfoServices from "../components/InfoServices/InfoServices";
+import Contact from "../components/Contact/Contact";
 
 export default function Landing() {
   return (
-    <div>
-      <Header />
-      <About />
-      <Projects />
-      <InfoServices />
-      <Contact />
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   );
 }

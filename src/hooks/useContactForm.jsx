@@ -9,7 +9,7 @@ export const useContactForm = () => {
     reset,
     trigger,
     formState: { errors, isValid },
-  } = useForm({ mode: "onBlur" });
+  } = useForm({ mode: "onChange" });
 
   const onSubmit = (data) => {
     toast.promise(
@@ -19,13 +19,20 @@ export const useContactForm = () => {
         {
           user_name: data.name,
           user_email: data.email,
-          message: data.message,
+          // Se envía todo dentro de "message" para no tener que cambiar la plantilla de EmailJS.
+          message: [
+            `Servicio: ${data.service}`,
+            `Marca: ${data.brand || "—"}`,
+            `Inversión mensual: ${data.budget || "—"}`,
+            "",
+            data.message,
+          ].join("\n"),
         },
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       ),
       {
         loading: "Enviando mensaje...",
-        success: "¡Mensaje enviado correctamente!",
+        success: "¡Listo! Recibí tu solicitud y te escribiré pronto.",
         error: "Error al enviar el mensaje. Intenta más tarde.",
       }
     );

@@ -6,11 +6,22 @@
     "urlGithub": "https://github.com/castolo10a/landing-jc-construcciones",
     "badge": "Freelance",
     "titleTecnologies": "Tecnologías",
-    "image": { "alt": "JC Construcciones" },
+    "image": {
+      "alt": "JC Construcciones"
+    },
     "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "NextJs", "href": "https://nextjs.org/" },
-      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "NextJs",
+        "href": "https://nextjs.org/"
+      },
+      {
+        "title": "TailwindCSS",
+        "href": "https://tailwindcss.com/"
+      }
     ]
   },
   {
@@ -20,24 +31,22 @@
     "urlGithub": "https://github.com/castolo10a/londono-ingenieria",
     "badge": "Freelance",
     "titleTecnologies": "Tecnologías",
-    "image": { "alt": "Londoño Ingenieria" },
+    "image": {
+      "alt": "Londoño Ingenieria"
+    },
     "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "NextJs", "href": "https://nextjs.org/" },
-      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
-    ]
-  },
-  {
-    "titleProject": "Products Page",
-    "content": "Aplicación SPA desarrollada con React y TailwindCSS para mostrar productos con filtros por categoría, precio y disponibilidad. Interfaz moderna y navegación fluida.",
-    "urlProject": "https://listproductsfilters.netlify.app/",
-    "urlGithub": "https://github.com/castolo10a/products-card-filter",
-    "badge": "Prueba Técnica",
-    "titleTecnologies": "Tecnologías",
-    "image": { "alt": "Products Page" },
-    "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "NextJs",
+        "href": "https://nextjs.org/"
+      },
+      {
+        "title": "TailwindCSS",
+        "href": "https://tailwindcss.com/"
+      }
     ]
   },
   {
@@ -47,11 +56,22 @@
     "urlGithub": "https://github.com/castolo10a/Vida-Animal",
     "badge": "Freelance",
     "titleTecnologies": "Tecnologías",
-    "image": { "alt": "Vida_animal" },
+    "image": {
+      "alt": "Vida_animal"
+    },
     "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "NextJs", "href": "https://nextjs.org/" },
-      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "NextJs",
+        "href": "https://nextjs.org/"
+      },
+      {
+        "title": "TailwindCSS",
+        "href": "https://tailwindcss.com/"
+      }
     ]
   },
   {
@@ -61,10 +81,18 @@
     "urlGithub": "https://github.com/castolo10a/Kolozo-Gastrobar",
     "badge": "Freelance",
     "titleTecnologies": "Tecnologías",
-    "image": { "alt": "Kolozo" },
+    "image": {
+      "alt": "Kolozo"
+    },
     "contentTecnologies": [
-      { "title": "React", "href": "http://es.reactjs.org" },
-      { "title": "TailwindCSS", "href": "https://tailwindcss.com/" }
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "TailwindCSS",
+        "href": "https://tailwindcss.com/"
+      }
     ]
   }
 ]

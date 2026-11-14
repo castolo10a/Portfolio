@@ -1,125 +1,85 @@
-import { useState, useEffect } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { HiOutlineMenuAlt4, HiX } from "react-icons/hi";
+import { NAV_LINKS } from "../../constants/content";
+
+const SCROLL_OFFSET = -72;
 
 export default function Navbar() {
-  const [oculto, setOculto] = useState(true);
-  const [scrolling, setScrolling] = useState(false);
-
-  const fileUrl = process.env.PUBLIC_URL + "/CV - Daniel Castillo.pdf";
-
-  const handleScroll = () => {
-    setScrolling(window.scrollY > 0);
-  };
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const toggleMenu = () => setOculto(!oculto);
-
-  const navLinks = [
-    { href: "Home", label: "Inicio" },
-    { href: "AboutMe", label: "Sobre Mí" },
-    { href: "Projects", label: "Proyectos" },
-    { href: "InfoServices", label: "Servicios" },
-    { href: "Contact", label: "Contacto" },
-    { href: fileUrl, label: "CV", external: true },
-  ];
+  const close = () => setOpen(false);
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition duration-300 ${
-        scrolling ? "bg-black/80 shadow-md backdrop-blur-sm" : "bg-transparent"
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+        scrolled || open
+          ? "border-b border-line bg-paper/90 backdrop-blur"
+          : "border-b border-transparent"
       }`}
     >
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo / Marca */}
-          <Link
-            to="Home"
-            smooth={true}
-            duration={500}
-            offset={-64}
-            onClick={!oculto && toggleMenu}
-            className="text-gray-200 text-lg font-semibold uppercase cursor-pointer"
-          >
-            CastilloCoder
-          </Link>
+      <div className="container-page flex h-16 items-center justify-between">
+        <Link
+          to="Home"
+          smooth
+          duration={500}
+          onClick={close}
+          className="cursor-pointer text-sm font-semibold tracking-tight"
+        >
+          Daniel Castillo
+        </Link>
 
-          {/* Botón menú hamburguesa (solo visible en mobile) */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden text-gray-200 hover:text-teal-600"
-            aria-label="Abrir menú"
-          >
-            {oculto ? (
-              <AiOutlineMenu size={25} />
-            ) : (
-              <AiOutlineClose size={25} />
-            )}
-          </button>
+        <nav className="hidden items-center gap-8 md:flex">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              smooth
+              spy
+              duration={500}
+              offset={SCROLL_OFFSET}
+              activeClass="!text-ink"
+              className="cursor-pointer text-sm text-muted transition-colors hover:text-ink"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
-          {/* Navegación desktop */}
-          <nav className="hidden md:flex items-center space-x-6 text-sm">
-            {navLinks.map((link) =>
-              link.external ? (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  smooth={true}
-                  duration={500}
-                  offset={-64}
-                  className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-          </nav>
-        </div>
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden"
+          aria-label={open ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={open}
+        >
+          {open ? <HiX size={22} /> : <HiOutlineMenuAlt4 size={22} />}
+        </button>
       </div>
 
-      {/* Navegación móvil */}
-      {!oculto && (
-        <div className="md:hidden bg-black/90 py-4 flex flex-col items-start px-6 space-y-4 transition-all duration-300">
-          {navLinks.map((link) =>
-            link.external ? (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link
-                key={link.label}
-                to={link.href}
-                smooth={true}
-                duration={500}
-                offset={-64}
-                onClick={!oculto && toggleMenu}
-                className="text-gray-200 hover:text-teal-600 uppercase cursor-pointer transition"
-              >
-                {link.label}
-              </Link>
-            )
-          )}
-        </div>
+      {open && (
+        <nav className="container-page flex flex-col pb-6 md:hidden">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              smooth
+              duration={500}
+              offset={SCROLL_OFFSET}
+              onClick={close}
+              className="cursor-pointer border-b border-line py-3 text-base"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
       )}
     </header>
   );
