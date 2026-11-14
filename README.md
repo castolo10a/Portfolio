@@ -124,7 +124,7 @@ El formulario pide el servicio de interés, nombre, correo, marca (opcional), in
 
 ## Despliegue
 
-El sitio se publica en Netlify cada vez que se suben cambios a la rama `main`. La configuración está en `public/netlify.toml`:
+El sitio se publica en Netlify cada vez que se suben cambios a la rama `main`. La configuración está en `netlify.toml`, en la raíz del proyecto:
 
 - **Comando de build:** `npm run build`
 - **Carpeta publicada:** `build`
