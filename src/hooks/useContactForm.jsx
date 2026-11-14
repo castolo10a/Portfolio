@@ -14,8 +14,8 @@ export const useContactForm = () => {
   const onSubmit = (data) => {
     toast.promise(
       emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           user_name: data.name,
           user_email: data.email,
@@ -28,7 +28,7 @@ export const useContactForm = () => {
             data.message,
           ].join("\n"),
         },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY
       ),
       {
         loading: "Enviando mensaje...",

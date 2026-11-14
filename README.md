@@ -21,7 +21,7 @@ Es una página única (*single page*) con navegación por secciones:
 
 ## Tecnologías
 
-- [React 18](https://react.dev/) con Create React App
+- [React 18](https://react.dev/) con [Vite 5](https://vitejs.dev/)
 - [Tailwind CSS 3](https://tailwindcss.com/) para los estilos
 - [EmailJS](https://www.emailjs.com/) para el envío del formulario sin backend
 - [React Hook Form](https://react-hook-form.com/) para la validación del formulario
@@ -80,7 +80,7 @@ Tipografías: **Instrument Serif** para los títulos e **Inter** para el texto, 
 
 ## Ejecutar en local
 
-Requisitos: Node.js 16 o superior y npm.
+Requisitos: Node.js 18 o superior (en Netlify se usa Node 20) y npm.
 
 ```bash
 git clone https://github.com/castolo10a/portfolio.git
@@ -99,18 +99,18 @@ REACT_APP_EMAILJS_PUBLIC_KEY=tu_public_key
 Luego inicia el servidor de desarrollo:
 
 ```bash
-npm start
+npm run dev
 ```
 
-El sitio queda disponible en `http://localhost:3000`.
+El sitio queda disponible en `http://localhost:5173`.
 
 ### Scripts disponibles
 
 | Comando | Descripción |
 | --- | --- |
-| `npm start` | Inicia el servidor de desarrollo |
-| `npm run build` | Genera la versión de producción en la carpeta `build/` |
-| `npm test` | Ejecuta las pruebas |
+| `npm run dev` | Inicia el servidor de desarrollo |
+| `npm run build` | Genera la versión de producción en la carpeta `dist/` |
+| `npm run preview` | Sirve localmente la versión de producción ya compilada |
 
 ## Formulario de contacto
 
@@ -127,7 +127,8 @@ El formulario pide el servicio de interés, nombre, correo, marca (opcional), in
 El sitio se publica en Netlify cada vez que se suben cambios a la rama `main`. La configuración está en `netlify.toml`, en la raíz del proyecto:
 
 - **Comando de build:** `npm run build`
-- **Carpeta publicada:** `build`
+- **Carpeta publicada:** `dist`
+- **Versión de Node:** 20
 - **Redirección** de todas las rutas a `index.html`
 
 Las variables de EmailJS deben configurarse también en Netlify, en **Site configuration → Environment variables**.
