@@ -4,13 +4,14 @@
 
 @layer base {
   html {
+    color-scheme: dark;
     scroll-behavior: smooth;
   }
   body {
     @apply bg-paper text-ink font-sans antialiased;
   }
   ::selection {
-    @apply bg-accent text-white;
+    @apply bg-accent text-paper;
   }
 }
 
@@ -22,7 +23,7 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors;
   }
   .btn-primary {
-    @apply btn bg-accent text-white hover:bg-ink;
+    @apply btn bg-accent text-paper hover:bg-ink;
   }
   .btn-ghost {
     @apply btn border border-line text-ink hover:border-ink;

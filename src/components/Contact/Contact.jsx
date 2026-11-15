@@ -4,7 +4,7 @@ import { CONTACT, CONTACT_SECTION } from "../../constants/content";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
 const FieldError = ({ error }) => (
-  <p className="min-h-[20px] pt-1 text-xs text-red-600">{error?.message}</p>
+  <p className="min-h-[20px] pt-1 text-xs text-red-400">{error?.message}</p>
 );
 
 const Label = ({ htmlFor, children, optional }) => (

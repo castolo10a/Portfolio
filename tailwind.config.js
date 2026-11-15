@@ -8,13 +8,13 @@ module.exports = {
         serif: ['"Instrument Serif"', "Georgia", "serif"],
       },
       colors: {
-        paper: "#F7F4EF", // fondo cálido
-        surface: "#FFFDF9", // tarjetas y secciones alternas
-        ink: "#1E1D1A", // texto principal
-        muted: "#6E685F", // texto secundario
-        line: "#E6E0D6", // bordes
-        accent: "#2F5D50", // verde pino
-        "accent-soft": "#E4ECE7",
+        paper: "#121311", // fondo principal, negro cálido
+        surface: "#1A1B18", // tarjetas y secciones alternas
+        ink: "#EDE8DF", // texto principal, crema
+        muted: "#9A958A", // texto secundario
+        line: "#2A2B27", // bordes
+        accent: "#8CC5A8", // verde salvia
+        "accent-soft": "#1E2A24", // fondo verde oscuro
       },
     },
   },

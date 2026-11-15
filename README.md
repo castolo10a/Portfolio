@@ -68,13 +68,13 @@ No hace falta tocar los componentes para actualizar la información del sitio:
 
 | Token | Color | Uso |
 | --- | --- | --- |
-| `paper` | `#F7F4EF` | Fondo principal |
-| `surface` | `#FFFDF9` | Tarjetas y secciones alternas |
-| `ink` | `#1E1D1A` | Texto principal |
-| `muted` | `#6E685F` | Texto secundario |
-| `line` | `#E6E0D6` | Bordes |
-| `accent` | `#2F5D50` | Botones y detalles |
-| `accent-soft` | `#E4ECE7` | Fondos destacados |
+| `paper` | `#121311` | Fondo principal |
+| `surface` | `#1A1B18` | Tarjetas y secciones alternas |
+| `ink` | `#EDE8DF` | Texto principal |
+| `muted` | `#9A958A` | Texto secundario |
+| `line` | `#2A2B27` | Bordes |
+| `accent` | `#8CC5A8` | Botones y detalles |
+| `accent-soft` | `#1E2A24` | Fondos destacados |
 
 Tipografías: **Instrument Serif** para los títulos e **Inter** para el texto, cargadas desde Google Fonts.
 
