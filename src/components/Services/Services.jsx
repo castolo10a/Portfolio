@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import { FiArrowRight, FiCheck } from "react-icons/fi";
-import { PROCESS, SERVICES, SERVICES_INTRO, TOOLS } from "../../constants/content";
+import { PROCESS, SERVICES, SERVICES_INTRO } from "../../constants/content";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
 export default function Services() {
@@ -69,7 +69,7 @@ export default function Services() {
           </ol>
         </div>
 
-        <div className="mt-20 grid gap-10 md:grid-cols-2">
+        {/* <div className="mt-20 grid gap-10 md:grid-cols-2">
           <div>
             <h3 className="mb-5 text-xs font-medium uppercase tracking-[0.2em] text-muted">
               Herramientas que uso a diario
@@ -101,7 +101,7 @@ export default function Services() {
         <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted">
           Las herramientas me ayudan a analizar más rápido; las decisiones salen
           del criterio y la experiencia acumulada con más de 20 marcas.
-        </p>
+        </p> */}
       </div>
     </section>
   );

@@ -34,8 +34,8 @@ export const HIGHLIGHTS = [
 export const ABOUT = {
   title: "Pauta con mentalidad de negocio.",
   paragraphs: [
-    "Soy Daniel Castillo, Administrador de Empresas y Media Buyer en Arriba Agencia. Mi día a día es implementar, optimizar y definir la estrategia de campañas en Meta Ads, sobre todo para tiendas online. He trabajado con más de 20 marcas de nichos muy distintos, y esa variedad me da criterio para saber qué probar, qué escalar y qué apagar.",
-    "Además de mi trabajo en la agencia, atiendo algunos clientes de forma independiente. Por mi formación, veo la pauta como una decisión de negocio: lo que importa es cuánto vendes y con qué margen, no solo los clics o el alcance. Me apoyo en herramientas como Supermetrics y Claude para analizar más rápido, pero las decisiones las tomo yo, con criterio y experiencia.",
+    "Soy Daniel Castillo, Administrador de Empresas y Media Buyer en Arriba Agencia. Mi día a día gira en torno a diseñar, implementar y optimizar la estrategia de pauta en Meta Ads, con un foco especial en tiendas online. A lo largo de mi recorrido he tenido la oportunidad de trabajar con más de 20 marcas de nichos muy distintos; esa variedad me ha dado el criterio necesario para saber qué vale la pena probar, qué escalar con cabeza fría y qué apagar a tiempo cuando no suma.",
+    "Además de mi trabajo en la agencia, acompaño a algunos proyectos de forma independiente. Desde mi formación administrativa, tengo muy claro que los anuncios son solo una pieza dentro del engranaje de un negocio. Por eso, mi enfoque no es venderte fórmulas mágicas ni prometerte resultados irreales, sino aportar estructura, análisis y criterio estratégico.",
   ],
   pillars: [
     {
@@ -97,16 +97,23 @@ export const SERVICES = [
 ];
 
 export const PROCESS = [
-  { title: "Conversación", text: "Me cuentas sobre tu negocio, tus objetivos y tu situación actual." },
-  { title: "Diagnóstico", text: "Reviso tu cuenta y tu página para entender qué está pasando." },
-  { title: "Propuesta", text: "Te digo qué haría, cómo y en cuánto tiempo, sin compromiso." },
-  { title: "Ejecución", text: "Ponemos el plan en marcha y te mantengo al tanto con reportes." },
+  {
+    title: "Conversación",
+    text: "Me cuentas sobre tu negocio, tus objetivos y tu situación actual.",
+  },
+  {
+    title: "Diagnóstico",
+    text: "Reviso tu cuenta y tu página para entender qué está pasando.",
+  },
+  {
+    title: "Propuesta",
+    text: "Te digo qué haría, cómo y en cuánto tiempo, sin compromiso.",
+  },
+  {
+    title: "Ejecución",
+    text: "Ponemos el plan en marcha y te mantengo al tanto con reportes.",
+  },
 ];
-
-export const TOOLS = {
-  daily: ["Meta Ads Manager", "Excel / Google Sheets", "Supermetrics", "Claude"],
-  learning: ["Meta Events Manager", "Google Analytics 4", "Looker Studio", "Google Ads"],
-};
 
 export const EXPERIENCE = [
   {
