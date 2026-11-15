@@ -18,9 +18,9 @@ export const NAV_LINKS = [
 
 export const HERO = {
   eyebrow: "Media Buyer de Meta Ads · Disponible para proyectos independientes",
-  title: "Hago que tu inversión en Meta Ads se convierta en ventas.",
+  title: "Hago que tu inversión en Meta Ads impulse los resultados reales de tu negocio.",
   description:
-    "Gestiono y audito cuentas publicitarias de Meta Ads para negocios grandes y pequeños, con foco en e-commerce. Soy Administrador de Empresas y trabajo como Media Buyer en una agencia, donde he manejado más de 20 marcas de distintos nichos.",
+    "Gestiono y audito cuentas publicitarias para tiendas online y negocios físicos, adaptando la estrategia a cada modelo. Como Administrador de Empresas y Media Buyer en Arriba Agencia, mi experiencia con más de 20 marcas me ha enseñado a priorizar el negocio real antes que los números de vanidad.",
   cta: "Quiero mejorar mis campañas",
 };
 
@@ -144,7 +144,7 @@ export const EXPERIENCE = [
 
 export const WEB = {
   title: "También construyo páginas web.",
-  text: "Antes de dedicarme a la pauta fui desarrollador frontend. Estos son algunos de los sitios que hice. Si necesitas una landing page o un sitio web rápido y pensado para convertir, puedo hacerlo por proyecto.",
+  text: "Tengo conocimiento en desarrollo frontend. Estos son algunos de los sitios que he realizado. Si necesitas una landing page o un sitio web rápido y pensado para convertir, puedo hacerlo por proyecto.",
   cta: "Cotizar una página",
 };
 
